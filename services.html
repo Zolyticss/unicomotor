@@ -1888,47 +1888,60 @@
         display: block;
         filter: brightness(0.94);
       }
+      /* Headlights aligned directly over the two-ring headlamp clusters */
       .collab-headlight {
         position: absolute;
-        width: 58px;
-        height: 42px;
+        width: 78px;
+        height: 52px;
         border-radius: 50%;
-        filter: blur(7px);
-        background: rgba(235, 248, 255, 0.92);
-        opacity: 0.95;
+        background: radial-gradient(
+          ellipse at center,
+          rgba(255, 255, 255, 0.98) 0%,
+          rgba(235, 248, 255, 0.88) 28%,
+          rgba(205, 235, 255, 0.34) 55%,
+          rgba(180, 225, 255, 0) 78%
+        );
+        filter: blur(3px);
+        opacity: 0.98;
         mix-blend-mode: screen;
         animation: headlightPulse 2.8s ease-in-out infinite;
         pointer-events: none;
+        z-index: 2;
       }
       .collab-headlight.left {
-        left: 21.2%;
-        top: 48%;
+        left: 20.2%;
+        top: 47.2%;
       }
       .collab-headlight.right {
-        right: 21.2%;
-        top: 48%;
+        right: 31.6%;
+        top: 47.2%;
         animation-delay: 0.28s;
       }
       .collab-headlight:after {
         content: "";
         position: absolute;
-        inset: -15px;
+        inset: -18px;
         border-radius: 50%;
-        background: rgba(220, 245, 255, 0.34);
-        filter: blur(13px);
+        background: radial-gradient(
+          ellipse at center,
+          rgba(210, 242, 255, 0.48) 0%,
+          rgba(190, 230, 255, 0.20) 42%,
+          rgba(170, 220, 255, 0) 74%
+        );
+        filter: blur(9px);
       }
       @keyframes headlightPulse {
         0%,
         14% {
-          opacity: 0.12;
-          transform: scale(0.72);
-          filter: blur(10px);
+          opacity: 0.72;
+          transform: scale(0.90);
+          filter: blur(4px);
         }
         30%,
         58% {
           opacity: 1;
-          transform: scale(1.06);
-          filter: blur(5px);
+          transform: scale(1.04);
+          filter: blur(2.5px);
         }
         72%,
         100% {
