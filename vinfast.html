@@ -7352,7 +7352,7 @@
         }
       }
     </style>
-
+  
     <style id="vinfast-complete-brochure-showcase">
       /* Complete brochure showcase: scoped only to the VinFast lineup section. */
       .vinfast-brochure-lineup {
@@ -7365,18 +7365,14 @@
         margin: 0 auto 60px;
         text-align: center;
       }
-      .vinfast-brochure-lineup .section-label {
-        justify-content: center;
-      }
+      .vinfast-brochure-lineup .section-label { justify-content: center; }
       .vinfast-brochure-lineup .lineup-heading p {
         max-width: 760px;
         margin: 24px auto 0;
         color: #707780;
         line-height: 1.8;
       }
-      .vinfast-brochure-lineup .lineup-list {
-        width: 100%;
-      }
+      .vinfast-brochure-lineup .lineup-list { width: 100%; }
       .vinfast-brochure-lineup .brochure-car {
         display: block !important;
         width: 100%;
@@ -7385,9 +7381,7 @@
         margin: 0;
         border-bottom: 1px solid #e5e7e9;
       }
-      .vinfast-brochure-lineup .brochure-car:last-child {
-        border-bottom: 0;
-      }
+      .vinfast-brochure-lineup .brochure-car:last-child { border-bottom: 0; }
       .vinfast-brochure-lineup .brochure-car .lineup-copy {
         width: min(1240px, calc(100% - 48px));
         margin: 0 auto;
@@ -7403,7 +7397,7 @@
       .vinfast-brochure-lineup .brochure-car .lineup-copy h3 {
         font-family: "Barlow Condensed", sans-serif;
         font-size: clamp(64px, 9vw, 128px);
-        line-height: 0.8;
+        line-height: .8;
         letter-spacing: -2px;
         text-transform: uppercase;
         margin: 12px 0 15px;
@@ -7433,7 +7427,7 @@
         object-fit: contain !important;
         object-position: center;
         mix-blend-mode: multiply !important;
-        filter: drop-shadow(0 24px 20px rgba(0, 0, 0, 0.14));
+        filter: drop-shadow(0 24px 20px rgba(0,0,0,.14));
       }
       .vinfast-brochure-lineup .brochure-showcase {
         position: relative;
@@ -7467,7 +7461,7 @@
       .vinfast-brochure-lineup .brochure-head h4 {
         font-family: "Barlow Condensed", sans-serif;
         font-size: 42px;
-        line-height: 0.9;
+        line-height: .9;
         text-transform: uppercase;
       }
       .vinfast-brochure-lineup .brochure-head > span {
@@ -7492,17 +7486,11 @@
       }
       .vinfast-brochure-lineup .brochure-page.is-active {
         display: block;
-        animation: brochureFade 0.35s ease;
+        animation: brochureFade .35s ease;
       }
       @keyframes brochureFade {
-        from {
-          opacity: 0.25;
-          transform: translateX(12px);
-        }
-        to {
-          opacity: 1;
-          transform: translateX(0);
-        }
+        from { opacity: .25; transform: translateX(12px); }
+        to { opacity: 1; transform: translateX(0); }
       }
       .vinfast-brochure-lineup .brochure-page img {
         display: block;
@@ -7520,7 +7508,7 @@
         transform: translateX(-50%);
         padding: 8px 13px;
         color: #fff;
-        background: rgba(12, 13, 15, 0.78);
+        background: rgba(12,13,15,.78);
         font-size: 9px;
         font-weight: 900;
         letter-spacing: 1.5px;
@@ -7539,15 +7527,15 @@
         pointer-events: auto;
         width: 58px;
         height: 58px;
-        border: 1px solid rgba(255, 255, 255, 0.35);
+        border: 1px solid rgba(255,255,255,.35);
         border-radius: 50%;
-        background: rgba(12, 13, 15, 0.78);
+        background: rgba(12,13,15,.78);
         color: #fff;
         cursor: pointer;
         display: grid;
         place-items: center;
         font-size: 25px;
-        transition: 0.25s ease;
+        transition: .25s ease;
         backdrop-filter: blur(8px);
       }
       .vinfast-brochure-lineup .brochure-arrow:hover {
@@ -7567,339 +7555,184 @@
         text-transform: uppercase;
       }
       @media (max-width: 900px) {
-        .vinfast-brochure-lineup .brochure-car {
-          padding-top: 58px;
-        }
-        .vinfast-brochure-lineup .brochure-car .lineup-copy {
-          width: calc(100% - 32px);
-        }
-        .vinfast-brochure-lineup .brochure-car .lineup-image-wrap {
-          height: 330px;
-        }
-        .vinfast-brochure-lineup .brochure-head {
-          width: calc(100% - 32px);
-        }
-        .vinfast-brochure-lineup .brochure-counter {
-          width: calc(100% - 32px);
-        }
-        .vinfast-brochure-lineup .brochure-arrow {
-          width: 48px;
-          height: 48px;
-        }
-        .vinfast-brochure-lineup .brochure-controls {
-          padding: 0 10px;
-        }
+        .vinfast-brochure-lineup .brochure-car { padding-top: 58px; }
+        .vinfast-brochure-lineup .brochure-car .lineup-copy { width: calc(100% - 32px); }
+        .vinfast-brochure-lineup .brochure-car .lineup-image-wrap { height: 330px; }
+        .vinfast-brochure-lineup .brochure-head { width: calc(100% - 32px); }
+        .vinfast-brochure-lineup .brochure-counter { width: calc(100% - 32px); }
+        .vinfast-brochure-lineup .brochure-arrow { width: 48px; height: 48px; }
+        .vinfast-brochure-lineup .brochure-controls { padding: 0 10px; }
       }
       @media (max-width: 560px) {
-        .vinfast-brochure-lineup {
-          padding: 75px 0 80px;
-        }
-        .vinfast-brochure-lineup .brochure-car .lineup-image-wrap {
-          height: 250px;
-        }
-        .vinfast-brochure-lineup .brochure-showcase {
-          padding: 25px 0 38px;
-        }
-        .vinfast-brochure-lineup .brochure-head {
-          display: block;
-        }
-        .vinfast-brochure-lineup .brochure-head > span {
-          display: block;
-          margin-top: 10px;
-        }
-        .vinfast-brochure-lineup .brochure-arrow {
-          width: 42px;
-          height: 42px;
-          font-size: 20px;
-        }
+        .vinfast-brochure-lineup { padding: 75px 0 80px; }
+        .vinfast-brochure-lineup .brochure-car .lineup-image-wrap { height: 250px; }
+        .vinfast-brochure-lineup .brochure-showcase { padding: 25px 0 38px; }
+        .vinfast-brochure-lineup .brochure-head { display: block; }
+        .vinfast-brochure-lineup .brochure-head > span { display: block; margin-top: 10px; }
+        .vinfast-brochure-lineup .brochure-arrow { width: 42px; height: 42px; font-size: 20px; }
       }
     </style>
+
 
     <style id="vinfast-color-selector">
-      .vinfast-brochure-lineup .car-color-selector {
-        width: min(1240px, calc(100% - 48px));
-        margin: 4px auto 28px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 11px;
-        position: relative;
-        z-index: 4;
-      }
-      .vinfast-brochure-lineup .car-color-label {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        color: #667078;
-        font-size: 10px;
-        font-weight: 900;
-        letter-spacing: 1.8px;
-        text-transform: uppercase;
-      }
-      .vinfast-brochure-lineup .car-color-label strong {
-        color: #111317;
-        font-size: 11px;
-        letter-spacing: 1px;
-      }
-      .vinfast-brochure-lineup .car-color-swatches {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-      .vinfast-brochure-lineup .car-color-swatch {
-        width: 28px;
-        height: 28px;
-        padding: 0;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        background: var(--swatch, #ddd);
-        box-shadow:
-          0 0 0 1px rgba(17, 19, 23, 0.18),
-          0 4px 10px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        position: relative;
-        transition:
-          transform 0.22s ease,
-          box-shadow 0.22s ease;
-      }
-      .vinfast-brochure-lineup .car-color-swatch:hover {
-        transform: translateY(-2px) scale(1.08);
-        box-shadow:
-          0 0 0 2px #f28a18,
-          0 6px 14px rgba(0, 0, 0, 0.15);
-      }
-      .vinfast-brochure-lineup .car-color-swatch.is-selected {
-        transform: scale(1.13);
-        box-shadow:
-          0 0 0 2px #f28a18,
-          0 0 0 5px rgba(242, 138, 24, 0.13),
-          0 7px 16px rgba(0, 0, 0, 0.16);
-      }
-      .vinfast-brochure-lineup .car-color-swatch::after {
-        content: attr(aria-label);
-        position: absolute;
-        left: 50%;
-        top: calc(100% + 9px);
-        transform: translateX(-50%) translateY(-2px);
-        padding: 6px 8px;
-        white-space: nowrap;
-        background: #0c0d0f;
-        color: #fff;
-        font-size: 8px;
-        font-weight: 800;
-        letter-spacing: 0.7px;
-        text-transform: uppercase;
-        opacity: 0;
-        pointer-events: none;
-        transition:
-          opacity 0.18s ease,
-          transform 0.18s ease;
-        z-index: 20;
-      }
-      .vinfast-brochure-lineup .car-color-swatch:hover::after,
-      .vinfast-brochure-lineup .car-color-swatch.is-selected::after {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
-      }
-      .vinfast-brochure-lineup .lineup-image-wrap img.color-changing-car {
-        --car-color-filter: none;
-        filter: var(--car-color-filter)
-          drop-shadow(0 24px 20px rgba(0, 0, 0, 0.14)) !important;
-        transition:
-          transform 0.45s cubic-bezier(0.2, 0.75, 0.2, 1),
-          filter 0.45s ease !important;
-      }
-      @media (max-width: 650px) {
-        .vinfast-brochure-lineup .car-color-selector {
-          width: calc(100% - 32px);
-        }
-        .vinfast-brochure-lineup .car-color-swatch {
-          width: 25px;
-          height: 25px;
-        }
-      }
+      .vinfast-brochure-lineup .car-color-selector{width:min(1240px,calc(100% - 48px));margin:4px auto 28px;display:flex;flex-direction:column;align-items:center;gap:11px;position:relative;z-index:4}
+      .vinfast-brochure-lineup .car-color-label{display:flex;align-items:center;gap:8px;color:#667078;font-size:10px;font-weight:900;letter-spacing:1.8px;text-transform:uppercase}
+      .vinfast-brochure-lineup .car-color-label strong{color:#111317;font-size:11px;letter-spacing:1px}
+      .vinfast-brochure-lineup .car-color-swatches{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px}
+      .vinfast-brochure-lineup .car-color-swatch{width:28px;height:28px;padding:0;border:2px solid #fff;border-radius:50%;background:var(--swatch,#ddd);box-shadow:0 0 0 1px rgba(17,19,23,.18),0 4px 10px rgba(0,0,0,.10);cursor:pointer;position:relative;transition:transform .22s ease,box-shadow .22s ease}
+      .vinfast-brochure-lineup .car-color-swatch:hover{transform:translateY(-2px) scale(1.08);box-shadow:0 0 0 2px #f28a18,0 6px 14px rgba(0,0,0,.15)}
+      .vinfast-brochure-lineup .car-color-swatch.is-selected{transform:scale(1.13);box-shadow:0 0 0 2px #f28a18,0 0 0 5px rgba(242,138,24,.13),0 7px 16px rgba(0,0,0,.16)}
+      .vinfast-brochure-lineup .car-color-swatch::after{content:attr(aria-label);position:absolute;left:50%;top:calc(100% + 9px);transform:translateX(-50%) translateY(-2px);padding:6px 8px;white-space:nowrap;background:#0c0d0f;color:#fff;font-size:8px;font-weight:800;letter-spacing:.7px;text-transform:uppercase;opacity:0;pointer-events:none;transition:opacity .18s ease,transform .18s ease;z-index:20}
+      .vinfast-brochure-lineup .car-color-swatch:hover::after,.vinfast-brochure-lineup .car-color-swatch.is-selected::after{opacity:1;transform:translateX(-50%) translateY(0)}
+      .vinfast-brochure-lineup .lineup-image-wrap img.color-changing-car{--car-color-filter:none;filter:var(--car-color-filter) drop-shadow(0 24px 20px rgba(0,0,0,.14)) !important;transition:transform .45s cubic-bezier(.2,.75,.2,1),filter .45s ease !important}
+      @media(max-width:650px){.vinfast-brochure-lineup .car-color-selector{width:calc(100% - 32px)}.vinfast-brochure-lineup .car-color-swatch{width:25px;height:25px}}
     </style>
 
-    <style id="vinfast-final-design-fix">
-      /* FINAL VINFAST LINEUP POLISH */
-      .vinfast-brochure-lineup .brochure-car .lineup-image-wrap {
-        min-height: clamp(360px, 42vw, 620px) !important;
-        height: clamp(360px, 42vw, 620px) !important;
-        padding: 0 !important;
-        overflow: visible !important;
-        background: transparent !important;
-      }
-      .vinfast-brochure-lineup
-        .brochure-car
-        .lineup-image-wrap
-        img.color-changing-car {
-        width: min(1180px, 96vw) !important;
-        max-width: 1180px !important;
-        height: 100% !important;
-        max-height: none !important;
-        object-fit: contain !important;
-        object-position: center bottom !important;
-        background: transparent !important;
-        border: 0 !important;
-        outline: 0 !important;
-        mix-blend-mode: multiply !important;
-        transform: none !important;
-        transition: filter 0.28s ease !important;
-        cursor: default !important;
-      }
-      /* No hover animation on vehicle images */
-      .vinfast-brochure-lineup .brochure-car:hover .lineup-image-wrap img,
-      .vinfast-brochure-lineup
-        .brochure-car:hover
-        .lineup-image-wrap
-        img.color-changing-car {
-        transform: none !important;
-      }
-      /* Make the brochure genuinely edge-to-edge */
-      .vinfast-brochure-lineup .brochure-showcase {
-        position: relative !important;
-        width: 100vw !important;
-        margin-left: calc(50% - 50vw) !important;
-        margin-right: calc(50% - 50vw) !important;
-        padding: 42px 0 58px !important;
-        overflow: visible !important;
-        background: #0b0d0f !important;
-        border-top: 3px solid #f28a18 !important;
-        border-left: 0 !important;
-        border-right: 0 !important;
-      }
-      .vinfast-brochure-lineup .brochure-head {
-        position: relative !important;
-        z-index: 8 !important;
-      }
-      .vinfast-brochure-lineup .brochure-pages {
-        position: relative !important;
-        width: 100vw !important;
-        max-width: 100vw !important;
-        overflow: hidden !important;
-        isolation: isolate !important;
-      }
-      .vinfast-brochure-lineup .brochure-page {
-        position: relative !important;
-        width: 100vw !important;
-        max-width: 100vw !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        background: #fff !important;
-        overflow: hidden !important;
-      }
-      .vinfast-brochure-lineup .brochure-page img {
-        display: block !important;
-        width: 100vw !important;
-        max-width: 100vw !important;
-        height: auto !important;
-        max-height: none !important;
-        margin: 0 !important;
-        object-fit: contain !important;
-        background: #fff !important;
-      }
-      /* Always-visible, large, high-contrast arrows */
-      .vinfast-brochure-lineup .brochure-controls {
-        position: absolute !important;
-        left: 0 !important;
-        right: 0 !important;
-        top: 50% !important;
-        bottom: auto !important;
-        transform: translateY(-50%) !important;
-        z-index: 999 !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-        width: 100% !important;
-        padding: 0 28px !important;
-        pointer-events: none !important;
-      }
-      .vinfast-brochure-lineup .brochure-arrow {
-        pointer-events: auto !important;
-        position: relative !important;
-        display: grid !important;
-        place-items: center !important;
-        flex: 0 0 auto !important;
-        width: 64px !important;
-        height: 64px !important;
-        min-width: 64px !important;
-        min-height: 64px !important;
-        padding: 0 !important;
-        border: 2px solid #fff !important;
-        border-radius: 50% !important;
-        background: rgba(11, 13, 15, 0.9) !important;
-        color: #fff !important;
-        font-family: Arial, sans-serif !important;
-        font-size: 34px !important;
-        font-weight: 400 !important;
-        line-height: 1 !important;
-        cursor: pointer !important;
-        box-shadow: 0 8px 28px rgba(0, 0, 0, 0.38) !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-        transition:
-          background 0.2s ease,
-          border-color 0.2s ease,
-          transform 0.2s ease !important;
-      }
-      .vinfast-brochure-lineup .brochure-arrow:hover {
-        background: #f28a18 !important;
-        border-color: #f28a18 !important;
-        transform: scale(1.06) !important;
-      }
-      .vinfast-brochure-lineup .brochure-counter {
-        position: relative !important;
-        z-index: 8 !important;
-        margin: 20px auto 0 !important;
-        color: #d5d8db !important;
-        font-size: 11px !important;
-        letter-spacing: 1.8px !important;
-      }
-      /* Keep color controls clean; only swatches get hover feedback, never the car */
-      .vinfast-brochure-lineup .car-color-swatch {
-        cursor: pointer !important;
-      }
-      @media (max-width: 900px) {
-        .vinfast-brochure-lineup .brochure-car .lineup-image-wrap {
-          height: 360px !important;
-          min-height: 360px !important;
-        }
-        .vinfast-brochure-lineup .brochure-controls {
-          padding: 0 14px !important;
-        }
-        .vinfast-brochure-lineup .brochure-arrow {
-          width: 52px !important;
-          height: 52px !important;
-          min-width: 52px !important;
-          min-height: 52px !important;
-          font-size: 27px !important;
-        }
-      }
-      @media (max-width: 560px) {
-        .vinfast-brochure-lineup .brochure-car .lineup-image-wrap {
-          height: 285px !important;
-          min-height: 285px !important;
-        }
-        .vinfast-brochure-lineup .brochure-showcase {
-          padding: 30px 0 42px !important;
-        }
-        .vinfast-brochure-lineup .brochure-controls {
-          padding: 0 9px !important;
-        }
-        .vinfast-brochure-lineup .brochure-arrow {
-          width: 46px !important;
-          height: 46px !important;
-          min-width: 46px !important;
-          min-height: 46px !important;
-          font-size: 23px !important;
-        }
-      }
-    </style>
+  
+<style id="vinfast-final-design-fix">
+/* FINAL VINFAST LINEUP POLISH */
+.vinfast-brochure-lineup .brochure-car .lineup-image-wrap{
+  min-height:clamp(360px,42vw,620px)!important;
+  height:clamp(360px,42vw,620px)!important;
+  padding:0!important;
+  overflow:visible!important;
+  background:transparent!important;
+}
+.vinfast-brochure-lineup .brochure-car .lineup-image-wrap img.color-changing-car{
+  width:min(1180px,96vw)!important;
+  max-width:1180px!important;
+  height:100%!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:center bottom!important;
+  background:transparent!important;
+  border:0!important;
+  outline:0!important;
+  mix-blend-mode:multiply!important;
+  transform:none!important;
+  transition:filter .28s ease!important;
+  cursor:default!important;
+}
+/* No hover animation on vehicle images */
+.vinfast-brochure-lineup .brochure-car:hover .lineup-image-wrap img,
+.vinfast-brochure-lineup .brochure-car:hover .lineup-image-wrap img.color-changing-car{
+  transform:none!important;
+}
+/* Make the brochure genuinely edge-to-edge */
+.vinfast-brochure-lineup .brochure-showcase{
+  position:relative!important;
+  width:100vw!important;
+  margin-left:calc(50% - 50vw)!important;
+  margin-right:calc(50% - 50vw)!important;
+  padding:42px 0 58px!important;
+  overflow:visible!important;
+  background:#0b0d0f!important;
+  border-top:3px solid #f28a18!important;
+  border-left:0!important;
+  border-right:0!important;
+}
+.vinfast-brochure-lineup .brochure-head{
+  position:relative!important;
+  z-index:8!important;
+}
+.vinfast-brochure-lineup .brochure-pages{
+  position:relative!important;
+  width:100vw!important;
+  max-width:100vw!important;
+  overflow:hidden!important;
+  isolation:isolate!important;
+}
+.vinfast-brochure-lineup .brochure-page{
+  position:relative!important;
+  width:100vw!important;
+  max-width:100vw!important;
+  margin:0!important;
+  padding:0!important;
+  background:#fff!important;
+  overflow:hidden!important;
+}
+.vinfast-brochure-lineup .brochure-page img{
+  display:block!important;
+  width:100vw!important;
+  max-width:100vw!important;
+  height:auto!important;
+  max-height:none!important;
+  margin:0!important;
+  object-fit:contain!important;
+  background:#fff!important;
+}
+/* Always-visible, large, high-contrast arrows */
+.vinfast-brochure-lineup .brochure-controls{
+  position:absolute!important;
+  left:0!important;
+  right:0!important;
+  top:50%!important;
+  bottom:auto!important;
+  transform:translateY(-50%)!important;
+  z-index:999!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  width:100%!important;
+  padding:0 28px!important;
+  pointer-events:none!important;
+}
+.vinfast-brochure-lineup .brochure-arrow{
+  pointer-events:auto!important;
+  position:relative!important;
+  display:grid!important;
+  place-items:center!important;
+  flex:0 0 auto!important;
+  width:64px!important;
+  height:64px!important;
+  min-width:64px!important;
+  min-height:64px!important;
+  padding:0!important;
+  border:2px solid #fff!important;
+  border-radius:50%!important;
+  background:rgba(11,13,15,.9)!important;
+  color:#fff!important;
+  font-family:Arial,sans-serif!important;
+  font-size:34px!important;
+  font-weight:400!important;
+  line-height:1!important;
+  cursor:pointer!important;
+  box-shadow:0 8px 28px rgba(0,0,0,.38)!important;
+  opacity:1!important;
+  visibility:visible!important;
+  transition:background .2s ease,border-color .2s ease,transform .2s ease!important;
+}
+.vinfast-brochure-lineup .brochure-arrow:hover{
+  background:#f28a18!important;
+  border-color:#f28a18!important;
+  transform:scale(1.06)!important;
+}
+.vinfast-brochure-lineup .brochure-counter{
+  position:relative!important;
+  z-index:8!important;
+  margin:20px auto 0!important;
+  color:#d5d8db!important;
+  font-size:11px!important;
+  letter-spacing:1.8px!important;
+}
+/* Keep color controls clean; only swatches get hover feedback, never the car */
+.vinfast-brochure-lineup .car-color-swatch{cursor:pointer!important}
+@media(max-width:900px){
+  .vinfast-brochure-lineup .brochure-car .lineup-image-wrap{height:360px!important;min-height:360px!important}
+  .vinfast-brochure-lineup .brochure-controls{padding:0 14px!important}
+  .vinfast-brochure-lineup .brochure-arrow{width:52px!important;height:52px!important;min-width:52px!important;min-height:52px!important;font-size:27px!important}
+}
+@media(max-width:560px){
+  .vinfast-brochure-lineup .brochure-car .lineup-image-wrap{height:285px!important;min-height:285px!important}
+  .vinfast-brochure-lineup .brochure-showcase{padding:30px 0 42px!important}
+  .vinfast-brochure-lineup .brochure-controls{padding:0 9px!important}
+  .vinfast-brochure-lineup .brochure-arrow{width:46px!important;height:46px!important;min-width:46px!important;min-height:46px!important;font-size:23px!important}
+}
+</style>
 
-    <style id="vinfast-brochure-final-fix">
-      /* =========================================================
+  
+<style id="vinfast-brochure-final-fix">
+/* =========================================================
    VINFAST BROCHURE CAROUSEL — FINAL FIX
    - full-width brochure without horizontal cropping
    - visible previous/next arrows
@@ -7908,439 +7741,392 @@
    - no hover movement on car images
    ========================================================= */
 
-      .vinfast-brochure-lineup {
-        overflow: visible !important;
-      }
+.vinfast-brochure-lineup{
+  overflow:visible !important;
+}
 
-      /* Keep the brochure truly viewport-wide, but centered against
+/* Keep the brochure truly viewport-wide, but centered against
    the 1240px content container. */
-      .vinfast-brochure-lineup .brochure-showcase {
-        position: relative !important;
-        left: auto !important;
-        width: 100vw !important;
-        max-width: 100vw !important;
-        margin-left: calc(50% - 50vw) !important;
-        margin-right: 0 !important;
-        transform: none !important;
-        padding: 42px 0 58px !important;
-        overflow: visible !important;
-        background: #0b0d0f !important;
-        border-top: 3px solid #f28a18 !important;
-        border-left: 0 !important;
-        border-right: 0 !important;
-        box-sizing: border-box !important;
-      }
+.vinfast-brochure-lineup .brochure-showcase{
+  position:relative !important;
+  left:auto !important;
+  width:100vw !important;
+  max-width:100vw !important;
+  margin-left:calc(50% - 50vw) !important;
+  margin-right:0 !important;
+  transform:none !important;
+  padding:42px 0 58px !important;
+  overflow:visible !important;
+  background:#0b0d0f !important;
+  border-top:3px solid #f28a18 !important;
+  border-left:0 !important;
+  border-right:0 !important;
+  box-sizing:border-box !important;
+}
 
-      .vinfast-brochure-lineup .brochure-head {
-        position: relative !important;
-        z-index: 20 !important;
-        width: min(1240px, calc(100% - 48px)) !important;
-        margin: 0 auto 24px !important;
-      }
+.vinfast-brochure-lineup .brochure-head{
+  position:relative !important;
+  z-index:20 !important;
+  width:min(1240px,calc(100% - 48px)) !important;
+  margin:0 auto 24px !important;
+}
 
-      .vinfast-brochure-lineup .brochure-pages {
-        position: relative !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-        min-height: 0 !important;
-        overflow: hidden !important;
-        isolation: isolate !important;
-        background: #fff !important;
-      }
+.vinfast-brochure-lineup .brochure-pages{
+  position:relative !important;
+  width:100% !important;
+  max-width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  overflow:hidden !important;
+  isolation:isolate !important;
+  background:#fff !important;
+}
 
-      /* Each brochure page occupies exactly the visible carousel width.
+/* Each brochure page occupies exactly the visible carousel width.
    This prevents the page image from being wider than its clipping box. */
-      .vinfast-brochure-lineup .brochure-page {
-        position: relative !important;
-        display: none !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        border: 0 !important;
-        overflow: hidden !important;
-        background: #fff !important;
-        box-sizing: border-box !important;
-      }
+.vinfast-brochure-lineup .brochure-page{
+  position:relative !important;
+  display:none !important;
+  width:100% !important;
+  max-width:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+  border:0 !important;
+  overflow:hidden !important;
+  background:#fff !important;
+  box-sizing:border-box !important;
+}
 
-      .vinfast-brochure-lineup .brochure-page.is-active {
-        display: block !important;
-        animation: vinfastBrochureFade 0.45s ease both !important;
-      }
+.vinfast-brochure-lineup .brochure-page.is-active{
+  display:block !important;
+  animation:vinfastBrochureFade .45s ease both !important;
+}
 
-      .vinfast-brochure-lineup .brochure-page img {
-        display: block !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-        max-height: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        object-fit: contain !important;
-        object-position: center center !important;
-        background: #fff !important;
-        transform: none !important;
-        transition: none !important;
-      }
+.vinfast-brochure-lineup .brochure-page img{
+  display:block !important;
+  width:100% !important;
+  max-width:100% !important;
+  height:auto !important;
+  max-height:none !important;
+  margin:0 !important;
+  padding:0 !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  background:#fff !important;
+  transform:none !important;
+  transition:none !important;
+}
 
-      @keyframes vinfastBrochureFade {
-        from {
-          opacity: 0.15;
-          transform: translateX(18px);
-        }
-        to {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
+@keyframes vinfastBrochureFade{
+  from{opacity:.15;transform:translateX(18px)}
+  to{opacity:1;transform:translateX(0)}
+}
 
-      /* Arrow layer */
-      .vinfast-brochure-lineup .brochure-controls {
-        position: absolute !important;
-        left: 0 !important;
-        right: 0 !important;
-        top: 50% !important;
-        bottom: auto !important;
-        width: 100% !important;
-        height: 0 !important;
-        margin: 0 !important;
-        padding: 0 28px !important;
-        transform: translateY(-50%) !important;
-        z-index: 100 !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-        pointer-events: none !important;
-        box-sizing: border-box !important;
-      }
+/* Arrow layer */
+.vinfast-brochure-lineup .brochure-controls{
+  position:absolute !important;
+  left:0 !important;
+  right:0 !important;
+  top:50% !important;
+  bottom:auto !important;
+  width:100% !important;
+  height:0 !important;
+  margin:0 !important;
+  padding:0 28px !important;
+  transform:translateY(-50%) !important;
+  z-index:100 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  pointer-events:none !important;
+  box-sizing:border-box !important;
+}
 
-      .vinfast-brochure-lineup .brochure-arrow {
-        pointer-events: auto !important;
-        flex: 0 0 auto !important;
-        width: 62px !important;
-        height: 62px !important;
-        min-width: 62px !important;
-        min-height: 62px !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        display: grid !important;
-        place-items: center !important;
-        border: 2px solid rgba(255, 255, 255, 0.95) !important;
-        border-radius: 50% !important;
-        background: rgba(8, 10, 12, 0.92) !important;
-        color: #fff !important;
-        font-family: Arial, sans-serif !important;
-        font-size: 32px !important;
-        font-weight: 400 !important;
-        line-height: 1 !important;
-        text-align: center !important;
-        cursor: pointer !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-        box-shadow: 0 8px 28px rgba(0, 0, 0, 0.42) !important;
-        transition:
-          background 0.2s ease,
-          border-color 0.2s ease,
-          transform 0.2s ease !important;
-      }
+.vinfast-brochure-lineup .brochure-arrow{
+  pointer-events:auto !important;
+  flex:0 0 auto !important;
+  width:62px !important;
+  height:62px !important;
+  min-width:62px !important;
+  min-height:62px !important;
+  padding:0 !important;
+  margin:0 !important;
+  display:grid !important;
+  place-items:center !important;
+  border:2px solid rgba(255,255,255,.95) !important;
+  border-radius:50% !important;
+  background:rgba(8,10,12,.92) !important;
+  color:#fff !important;
+  font-family:Arial,sans-serif !important;
+  font-size:32px !important;
+  font-weight:400 !important;
+  line-height:1 !important;
+  text-align:center !important;
+  cursor:pointer !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  box-shadow:0 8px 28px rgba(0,0,0,.42) !important;
+  transition:background .2s ease,border-color .2s ease,transform .2s ease !important;
+}
 
-      .vinfast-brochure-lineup .brochure-arrow:hover {
-        background: #f28a18 !important;
-        border-color: #f28a18 !important;
-        transform: scale(1.06) !important;
-      }
+.vinfast-brochure-lineup .brochure-arrow:hover{
+  background:#f28a18 !important;
+  border-color:#f28a18 !important;
+  transform:scale(1.06) !important;
+}
 
-      .vinfast-brochure-lineup .brochure-counter {
-        position: relative !important;
-        z-index: 20 !important;
-        width: min(1240px, calc(100% - 48px)) !important;
-        margin: 18px auto 0 !important;
-        display: flex !important;
-        justify-content: center !important;
-        color: #d5d8db !important;
-        font-size: 11px !important;
-        font-weight: 800 !important;
-        letter-spacing: 1.8px !important;
-        text-transform: uppercase !important;
-      }
+.vinfast-brochure-lineup .brochure-counter{
+  position:relative !important;
+  z-index:20 !important;
+  width:min(1240px,calc(100% - 48px)) !important;
+  margin:18px auto 0 !important;
+  display:flex !important;
+  justify-content:center !important;
+  color:#d5d8db !important;
+  font-size:11px !important;
+  font-weight:800 !important;
+  letter-spacing:1.8px !important;
+  text-transform:uppercase !important;
+}
 
-      /* Absolutely no image hover movement. Color selection still works. */
-      .vinfast-brochure-lineup .brochure-car .lineup-image-wrap img,
-      .vinfast-brochure-lineup
-        .brochure-car
-        .lineup-image-wrap
-        img.color-changing-car,
-      .vinfast-brochure-lineup .brochure-car:hover .lineup-image-wrap img,
-      .vinfast-brochure-lineup
-        .brochure-car:hover
-        .lineup-image-wrap
-        img.color-changing-car,
-      .vinfast-brochure-lineup .brochure-car:focus .lineup-image-wrap img,
-      .vinfast-brochure-lineup .brochure-car:active .lineup-image-wrap img {
-        transform: none !important;
-        transition: filter 0.28s ease !important;
-      }
+/* Absolutely no image hover movement. Color selection still works. */
+.vinfast-brochure-lineup .brochure-car .lineup-image-wrap img,
+.vinfast-brochure-lineup .brochure-car .lineup-image-wrap img.color-changing-car,
+.vinfast-brochure-lineup .brochure-car:hover .lineup-image-wrap img,
+.vinfast-brochure-lineup .brochure-car:hover .lineup-image-wrap img.color-changing-car,
+.vinfast-brochure-lineup .brochure-car:focus .lineup-image-wrap img,
+.vinfast-brochure-lineup .brochure-car:active .lineup-image-wrap img{
+  transform:none !important;
+  transition:filter .28s ease !important;
+}
 
-      /* Also remove the card hover lift/shadow for the brochure car itself,
+/* Also remove the card hover lift/shadow for the brochure car itself,
    so hovering anywhere around the vehicle doesn't create an effect. */
-      .vinfast-brochure-lineup .brochure-car:hover {
-        transform: none !important;
-        box-shadow: none !important;
-      }
+.vinfast-brochure-lineup .brochure-car:hover{
+  transform:none !important;
+  box-shadow:none !important;
+}
 
-      @media (max-width: 900px) {
-        .vinfast-brochure-lineup .brochure-head {
-          width: calc(100% - 32px) !important;
-        }
-        .vinfast-brochure-lineup .brochure-controls {
-          padding: 0 16px !important;
-        }
-        .vinfast-brochure-lineup .brochure-arrow {
-          width: 52px !important;
-          height: 52px !important;
-          min-width: 52px !important;
-          min-height: 52px !important;
-          font-size: 27px !important;
-        }
-        .vinfast-brochure-lineup .brochure-counter {
-          width: calc(100% - 32px) !important;
-        }
-      }
+@media(max-width:900px){
+  .vinfast-brochure-lineup .brochure-head{
+    width:calc(100% - 32px) !important;
+  }
+  .vinfast-brochure-lineup .brochure-controls{
+    padding:0 16px !important;
+  }
+  .vinfast-brochure-lineup .brochure-arrow{
+    width:52px !important;
+    height:52px !important;
+    min-width:52px !important;
+    min-height:52px !important;
+    font-size:27px !important;
+  }
+  .vinfast-brochure-lineup .brochure-counter{
+    width:calc(100% - 32px) !important;
+  }
+}
 
-      @media (max-width: 560px) {
-        .vinfast-brochure-lineup .brochure-showcase {
-          padding: 30px 0 42px !important;
-        }
-        .vinfast-brochure-lineup .brochure-head {
-          display: block !important;
-        }
-        .vinfast-brochure-lineup .brochure-head > span {
-          display: block !important;
-          margin-top: 10px !important;
-        }
-        .vinfast-brochure-lineup .brochure-controls {
-          padding: 0 9px !important;
-        }
-        .vinfast-brochure-lineup .brochure-arrow {
-          width: 46px !important;
-          height: 46px !important;
-          min-width: 46px !important;
-          min-height: 46px !important;
-          font-size: 23px !important;
-        }
-      }
-    </style>
+@media(max-width:560px){
+  .vinfast-brochure-lineup .brochure-showcase{
+    padding:30px 0 42px !important;
+  }
+  .vinfast-brochure-lineup .brochure-head{
+    display:block !important;
+  }
+  .vinfast-brochure-lineup .brochure-head > span{
+    display:block !important;
+    margin-top:10px !important;
+  }
+  .vinfast-brochure-lineup .brochure-controls{
+    padding:0 9px !important;
+  }
+  .vinfast-brochure-lineup .brochure-arrow{
+    width:46px !important;
+    height:46px !important;
+    min-width:46px !important;
+    min-height:46px !important;
+    font-size:23px !important;
+  }
+}
+</style>
 
-    <style id="vinfast-brochure-true-final">
-      /* =========================================================
+
+<style id="vinfast-brochure-true-final">
+/* =========================================================
    TRUE FINAL BROCHURE CAROUSEL
    One complete brochure page visible at a time.
    Arrows stay in the top header. Auto-rotation remains active.
    ========================================================= */
-      .vinfast-brochure-lineup .brochure-showcase {
-        position: relative !important;
-        width: min(1480px, calc(100% - 32px)) !important;
-        max-width: 1480px !important;
-        margin: 0 auto !important;
-        left: auto !important;
-        right: auto !important;
-        transform: none !important;
-        padding: 30px 0 42px !important;
-        box-sizing: border-box !important;
-        overflow: visible !important;
-        background: #0b0d0f !important;
-        border-top: 3px solid #f28a18 !important;
-      }
-      .vinfast-brochure-lineup .brochure-head {
-        width: calc(100% - 56px) !important;
-        max-width: none !important;
-        margin: 0 auto 22px !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-        gap: 24px !important;
-        position: relative !important;
-        z-index: 50 !important;
-        box-sizing: border-box !important;
-      }
-      .vinfast-brochure-lineup .brochure-head > div:first-child {
-        flex: 1 1 auto !important;
-        min-width: 0 !important;
-      }
-      .vinfast-brochure-lineup .brochure-head > span:not(.brochure-counter) {
-        flex: 0 0 auto !important;
-      }
-      /* Controls are placed in the header, never over the brochure image. */
-      .vinfast-brochure-lineup .brochure-head .brochure-controls {
-        position: static !important;
-        inset: auto !important;
-        width: auto !important;
-        height: auto !important;
-        transform: none !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: flex-end !important;
-        gap: 10px !important;
-        padding: 0 !important;
-        margin: 0 0 0 auto !important;
-        pointer-events: auto !important;
-        z-index: 100 !important;
-        order: 2 !important;
-      }
-      .vinfast-brochure-lineup .brochure-head .brochure-arrow {
-        position: static !important;
-        width: 48px !important;
-        height: 48px !important;
-        min-width: 48px !important;
-        min-height: 48px !important;
-        display: grid !important;
-        place-items: center !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        border: 1.5px solid rgba(255, 255, 255, 0.7) !important;
-        border-radius: 50% !important;
-        background: #111317 !important;
-        color: #fff !important;
-        font-family: Arial, sans-serif !important;
-        font-size: 25px !important;
-        line-height: 1 !important;
-        cursor: pointer !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-        box-shadow: none !important;
-        transform: none !important;
-        transition:
-          background 0.2s ease,
-          border-color 0.2s ease !important;
-      }
-      .vinfast-brochure-lineup .brochure-head .brochure-arrow:hover {
-        background: #f28a18 !important;
-        border-color: #f28a18 !important;
-        transform: none !important;
-      }
-      .vinfast-brochure-lineup .brochure-head .brochure-counter {
-        position: static !important;
-        width: auto !important;
-        margin: 0 !important;
-        display: block !important;
-        color: #b8bec4 !important;
-        font-size: 10px !important;
-        font-weight: 800 !important;
-        letter-spacing: 1.5px !important;
-        text-transform: uppercase !important;
-        white-space: nowrap !important;
-        order: 3 !important;
-      }
-      /* The page box never crops its image horizontally. */
-      .vinfast-brochure-lineup .brochure-pages {
-        position: relative !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-        min-height: 0 !important;
-        overflow: visible !important;
-        background: #fff !important;
-        isolation: isolate !important;
-      }
-      .vinfast-brochure-lineup .brochure-page {
-        position: relative !important;
-        display: none !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        border: 0 !important;
-        overflow: visible !important;
-        background: #fff !important;
-        box-sizing: border-box !important;
-      }
-      .vinfast-brochure-lineup .brochure-page.is-active {
-        display: block !important;
-        animation: vinfastBrochurePageIn 0.38s ease both !important;
-      }
-      .vinfast-brochure-lineup .brochure-page img {
-        display: block !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-        max-height: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        object-fit: contain !important;
-        object-position: center center !important;
-        background: #fff !important;
-        transform: none !important;
-        transition: none !important;
-      }
-      @keyframes vinfastBrochurePageIn {
-        from {
-          opacity: 0.35;
-          transform: translateX(14px);
-        }
-        to {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
-      /* No hover effect anywhere on the vehicle image. */
-      .vinfast-brochure-lineup .brochure-car:hover,
-      .vinfast-brochure-lineup .brochure-car:hover .lineup-image-wrap,
-      .vinfast-brochure-lineup .brochure-car:hover .lineup-image-wrap img,
-      .vinfast-brochure-lineup
-        .brochure-car
-        .lineup-image-wrap
-        img.color-changing-car {
-        transform: none !important;
-        box-shadow: none !important;
-      }
-      @media (max-width: 900px) {
-        .vinfast-brochure-lineup .brochure-showcase {
-          width: calc(100% - 20px) !important;
-          max-width: none !important;
-          padding: 24px 0 34px !important;
-        }
-        .vinfast-brochure-lineup .brochure-head {
-          width: calc(100% - 28px) !important;
-          gap: 12px !important;
-        }
-        .vinfast-brochure-lineup .brochure-head .brochure-arrow {
-          width: 44px !important;
-          height: 44px !important;
-          min-width: 44px !important;
-          min-height: 44px !important;
-          font-size: 23px !important;
-        }
-      }
-      @media (max-width: 560px) {
-        .vinfast-brochure-lineup .brochure-showcase {
-          width: 100% !important;
-          padding: 20px 0 28px !important;
-        }
-        .vinfast-brochure-lineup .brochure-head {
-          width: calc(100% - 20px) !important;
-          flex-wrap: wrap !important;
-        }
-        .vinfast-brochure-lineup .brochure-head .brochure-controls {
-          order: 2 !important;
-          margin-left: auto !important;
-        }
-        .vinfast-brochure-lineup .brochure-head .brochure-counter {
-          order: 3 !important;
-          width: 100% !important;
-          text-align: right !important;
-        }
-        .vinfast-brochure-lineup .brochure-head .brochure-arrow {
-          width: 42px !important;
-          height: 42px !important;
-          min-width: 42px !important;
-          min-height: 42px !important;
-          font-size: 22px !important;
-        }
-      }
-    </style>
-  </head>
+.vinfast-brochure-lineup .brochure-showcase{
+  position:relative!important;
+  width:min(1480px,calc(100% - 32px))!important;
+  max-width:1480px!important;
+  margin:0 auto!important;
+  left:auto!important;
+  right:auto!important;
+  transform:none!important;
+  padding:30px 0 42px!important;
+  box-sizing:border-box!important;
+  overflow:visible!important;
+  background:#0b0d0f!important;
+  border-top:3px solid #f28a18!important;
+}
+.vinfast-brochure-lineup .brochure-head{
+  width:calc(100% - 56px)!important;
+  max-width:none!important;
+  margin:0 auto 22px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:24px!important;
+  position:relative!important;
+  z-index:50!important;
+  box-sizing:border-box!important;
+}
+.vinfast-brochure-lineup .brochure-head > div:first-child{
+  flex:1 1 auto!important;
+  min-width:0!important;
+}
+.vinfast-brochure-lineup .brochure-head > span:not(.brochure-counter){
+  flex:0 0 auto!important;
+}
+/* Controls are placed in the header, never over the brochure image. */
+.vinfast-brochure-lineup .brochure-head .brochure-controls{
+  position:static!important;
+  inset:auto!important;
+  width:auto!important;
+  height:auto!important;
+  transform:none!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:10px!important;
+  padding:0!important;
+  margin:0 0 0 auto!important;
+  pointer-events:auto!important;
+  z-index:100!important;
+  order:2!important;
+}
+.vinfast-brochure-lineup .brochure-head .brochure-arrow{
+  position:static!important;
+  width:48px!important;
+  height:48px!important;
+  min-width:48px!important;
+  min-height:48px!important;
+  display:grid!important;
+  place-items:center!important;
+  padding:0!important;
+  margin:0!important;
+  border:1.5px solid rgba(255,255,255,.7)!important;
+  border-radius:50%!important;
+  background:#111317!important;
+  color:#fff!important;
+  font-family:Arial,sans-serif!important;
+  font-size:25px!important;
+  line-height:1!important;
+  cursor:pointer!important;
+  opacity:1!important;
+  visibility:visible!important;
+  box-shadow:none!important;
+  transform:none!important;
+  transition:background .2s ease,border-color .2s ease!important;
+}
+.vinfast-brochure-lineup .brochure-head .brochure-arrow:hover{
+  background:#f28a18!important;
+  border-color:#f28a18!important;
+  transform:none!important;
+}
+.vinfast-brochure-lineup .brochure-head .brochure-counter{
+  position:static!important;
+  width:auto!important;
+  margin:0!important;
+  display:block!important;
+  color:#b8bec4!important;
+  font-size:10px!important;
+  font-weight:800!important;
+  letter-spacing:1.5px!important;
+  text-transform:uppercase!important;
+  white-space:nowrap!important;
+  order:3!important;
+}
+/* The page box never crops its image horizontally. */
+.vinfast-brochure-lineup .brochure-pages{
+  position:relative!important;
+  width:100%!important;
+  max-width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  overflow:visible!important;
+  background:#fff!important;
+  isolation:isolate!important;
+}
+.vinfast-brochure-lineup .brochure-page{
+  position:relative!important;
+  display:none!important;
+  width:100%!important;
+  max-width:100%!important;
+  height:auto!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  overflow:visible!important;
+  background:#fff!important;
+  box-sizing:border-box!important;
+}
+.vinfast-brochure-lineup .brochure-page.is-active{
+  display:block!important;
+  animation:vinfastBrochurePageIn .38s ease both!important;
+}
+.vinfast-brochure-lineup .brochure-page img{
+  display:block!important;
+  width:100%!important;
+  max-width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  margin:0!important;
+  padding:0!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  background:#fff!important;
+  transform:none!important;
+  transition:none!important;
+}
+@keyframes vinfastBrochurePageIn{
+  from{opacity:.35;transform:translateX(14px)}
+  to{opacity:1;transform:translateX(0)}
+}
+/* No hover effect anywhere on the vehicle image. */
+.vinfast-brochure-lineup .brochure-car:hover,
+.vinfast-brochure-lineup .brochure-car:hover .lineup-image-wrap,
+.vinfast-brochure-lineup .brochure-car:hover .lineup-image-wrap img,
+.vinfast-brochure-lineup .brochure-car .lineup-image-wrap img.color-changing-car{
+  transform:none!important;
+  box-shadow:none!important;
+}
+@media(max-width:900px){
+  .vinfast-brochure-lineup .brochure-showcase{
+    width:calc(100% - 20px)!important;
+    max-width:none!important;
+    padding:24px 0 34px!important;
+  }
+  .vinfast-brochure-lineup .brochure-head{
+    width:calc(100% - 28px)!important;
+    gap:12px!important;
+  }
+  .vinfast-brochure-lineup .brochure-head .brochure-arrow{
+    width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important;font-size:23px!important;
+  }
+}
+@media(max-width:560px){
+  .vinfast-brochure-lineup .brochure-showcase{width:100%!important;padding:20px 0 28px!important}
+  .vinfast-brochure-lineup .brochure-head{width:calc(100% - 20px)!important;flex-wrap:wrap!important}
+  .vinfast-brochure-lineup .brochure-head .brochure-controls{order:2!important;margin-left:auto!important}
+  .vinfast-brochure-lineup .brochure-head .brochure-counter{order:3!important;width:100%!important;text-align:right!important}
+  .vinfast-brochure-lineup .brochure-head .brochure-arrow{width:42px!important;height:42px!important;min-width:42px!important;min-height:42px!important;font-size:22px!important}
+}
+</style>
+
+</head>
 
   <body>
     <div class="topbar">
@@ -8358,7 +8144,10 @@
     <header class="navbar">
       <div class="container nav-inner">
         <a href="index.html" class="logo" aria-label="Unico Motors">
-          <img src="assets/vinfast-embedded-02.png" alt="Unico Motors" />
+          <img
+            src="assets/vinfast-embedded-02.png"
+            alt="Unico Motors"
+          />
         </a>
 
         <nav class="nav-links" id="navLinks">
@@ -8450,7 +8239,10 @@
             class="services-intro-kicker services-logo-mark"
             aria-label="Unico Motors"
           >
-            <img src="assets/vinfast-embedded-07.png" alt="Unico Motors" />
+            <img
+              src="assets/vinfast-embedded-07.png"
+              alt="Unico Motors"
+            />
           </div>
           <h2>We're a Company of<br />talented engineers &amp; mechanics</h2>
           <p class="services-intro-subtitle">
@@ -8603,7 +8395,7 @@
                 <img
                   decoding="async"
                   loading="lazy"
-                  src="https://d1tjylbhswro2u.cloudfront.net/images/new-cars/Vinfast/2025_VF-6-1.jpg?format=webp&width=3840"
+                  src="https://asset.autocarindia.com/static/models/colors/20260813_044229_68f6797d.jpg?fm=auto&q=95&w=2400"
                   alt="VinFast VF 6"
                 />
               </div>
@@ -8681,10 +8473,7 @@
           <div class="lineup-heading reveal">
             <div class="section-label">Explore The VinFast Lineup</div>
             <h2>DESIGNED<br /><span>FOR A BRIGHTER TOMORROW</span></h2>
-            <p>
-              Explore the three VinFast models below. Each car is shown with its
-              vehicle image and complete brochure, page by page.
-            </p>
+            <p>Explore the three VinFast models below. Each car is shown with its vehicle image and complete brochure, page by page.</p>
           </div>
 
           <div class="lineup-list">
@@ -8695,259 +8484,71 @@
                 <p>SLEEK. SMART.<br />EVERYDAY ELECTRIC.</p>
               </div>
               <div class="lineup-image-wrap">
-                <img
-                  class="color-changing-car"
-                  decoding="async"
-                  loading="lazy"
-                  src="https://d1tjylbhswro2u.cloudfront.net/images/new-cars/Vinfast/2025_VF-6-1.jpg?format=webp&width=3840"
-                  alt="VinFast VF 6"
-                />
+                <img class="color-changing-car" decoding="async" loading="lazy" src="https://asset.autocarindia.com/static/models/colors/20260813_044229_68f6797d.jpg?fm=auto&q=95&w=2400" alt="VinFast VF 6" />
               </div>
-              <div class="car-color-selector" data-model="vf6">
-                <div class="car-color-label">
-                  Exterior Colour
-                  <strong class="selected-color-name">Infinity Blanc</strong>
-                </div>
-                <div
-                  class="car-color-swatches"
-                  role="group"
-                  aria-label="VF 6 exterior colours"
-                >
-                  <button
-                    type="button"
-                    class="car-color-swatch is-selected"
-                    style="--swatch: #f1f0ea"
-                    data-name="Infinity Blanc"
-                    data-filter="none"
-                    aria-label="Infinity Blanc"
-                    aria-pressed="true"
-                  ></button>
-                  <button
-                    type="button"
-                    class="car-color-swatch"
-                    style="--swatch: #17191b"
-                    data-name="Jet Black"
-                    data-filter="grayscale(.35) contrast(1.35) saturate(.75)"
-                    aria-label="Jet Black"
-                    aria-pressed="false"
-                  ></button>
-                  <button
-                    type="button"
-                    class="car-color-swatch"
-                    style="--swatch: #aeb5b8"
-                    data-name="Desat Silver"
-                    data-filter="grayscale(.45) contrast(1.04) saturate(.9)"
-                    aria-label="Desat Silver"
-                    aria-pressed="false"
-                  ></button>
-                  <button
-                    type="button"
-                    class="car-color-swatch"
-                    style="--swatch: #62686d"
-                    data-name="Zenith Grey"
-                    data-filter="grayscale(.72) contrast(1.12) saturate(.85)"
-                    aria-label="Zenith Grey"
-                    aria-pressed="false"
-                  ></button>
-                  <button
-                    type="button"
-                    class="car-color-swatch"
-                    style="--swatch: #a51f31"
-                    data-name="Solar Ruby"
-                    data-filter="saturate(4.2) hue-rotate(319deg) contrast(1.08)"
-                    aria-label="Solar Ruby"
-                    aria-pressed="false"
-                  ></button>
-                  <button
-                    type="button"
-                    class="car-color-swatch"
-                    style="--swatch: #315542"
-                    data-name="Ivy Green"
-                    data-filter="saturate(3.4) hue-rotate(58deg) contrast(1.08)"
-                    aria-label="Ivy Green"
-                    aria-pressed="false"
-                  ></button>
-                  <button
-                    type="button"
-                    class="car-color-swatch"
-                    style="--swatch: #315c76"
-                    data-name="Moonlight Ocean"
-                    data-filter="saturate(3.4) hue-rotate(157deg) contrast(1.08)"
-                    aria-label="Moonlight Ocean"
-                    aria-pressed="false"
-                  ></button>
-                </div>
-              </div>
+              <div class="car-color-selector" data-model="vf6"><div class="car-color-label">Exterior Colour <strong class="selected-color-name">Infinity Blanc</strong></div><div class="car-color-swatches" role="group" aria-label="VF 6 exterior colours">
+<button type="button" class="car-color-swatch is-selected" style="--swatch:#f1f0ea" data-name="Infinity Blanc" data-filter="none" aria-label="Infinity Blanc" aria-pressed="true"></button>
+<button type="button" class="car-color-swatch" style="--swatch:#17191b" data-name="Jet Black" data-filter="grayscale(.35) contrast(1.35) saturate(.75)" aria-label="Jet Black" aria-pressed="false"></button>
+<button type="button" class="car-color-swatch" style="--swatch:#aeb5b8" data-name="Desat Silver" data-filter="grayscale(.45) contrast(1.04) saturate(.9)" aria-label="Desat Silver" aria-pressed="false"></button>
+<button type="button" class="car-color-swatch" style="--swatch:#62686d" data-name="Zenith Grey" data-filter="grayscale(.72) contrast(1.12) saturate(.85)" aria-label="Zenith Grey" aria-pressed="false"></button>
+<button type="button" class="car-color-swatch" style="--swatch:#a51f31" data-name="Solar Ruby" data-filter="saturate(4.2) hue-rotate(319deg) contrast(1.08)" aria-label="Solar Ruby" aria-pressed="false"></button>
+<button type="button" class="car-color-swatch" style="--swatch:#315542" data-name="Ivy Green" data-filter="saturate(3.4) hue-rotate(58deg) contrast(1.08)" aria-label="Ivy Green" aria-pressed="false"></button>
+<button type="button" class="car-color-swatch" style="--swatch:#315c76" data-name="Moonlight Ocean" data-filter="saturate(3.4) hue-rotate(157deg) contrast(1.08)" aria-label="Moonlight Ocean" aria-pressed="false"></button>
+</div></div>
               <div class="brochure-showcase">
                 <div class="brochure-head">
-                  <div>
-                    <span class="brochure-kicker">COMPLETE BROCHURE</span>
-                    <h4>VF 6</h4>
-                  </div>
+                  <div><span class="brochure-kicker">COMPLETE BROCHURE</span><h4>VF 6</h4></div>
                   <span>8 brochure pages</span>
                 </div>
                 <div class="brochure-pages">
-                  <figure class="brochure-page is-active">
-                    <img
-                      src="assets/vinfast-embedded-08.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF 6 brochure — page 1"
-                    />
-                    <figcaption>PAGE 01</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-09.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF 6 brochure — page 2"
-                    />
-                    <figcaption>PAGE 02</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-10.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF 6 brochure — page 3"
-                    />
-                    <figcaption>PAGE 03</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-11.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF 6 brochure — page 4"
-                    />
-                    <figcaption>PAGE 04</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-12.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF 6 brochure — page 5"
-                    />
-                    <figcaption>PAGE 05</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-13.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF 6 brochure — page 6"
-                    />
-                    <figcaption>PAGE 06</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-14.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF 6 brochure — page 7"
-                    />
-                    <figcaption>PAGE 07</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-15.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF 6 brochure — page 8"
-                    />
-                    <figcaption>PAGE 08</figcaption>
-                  </figure>
-                </div>
+                <figure class="brochure-page is-active">
+                  <img src="assets/vinfast-embedded-08.jpg" loading="lazy" decoding="async" alt="VF 6 brochure — page 1" />
+                  <figcaption>PAGE 01</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-09.jpg" loading="lazy" decoding="async" alt="VF 6 brochure — page 2" />
+                  <figcaption>PAGE 02</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-10.jpg" loading="lazy" decoding="async" alt="VF 6 brochure — page 3" />
+                  <figcaption>PAGE 03</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-11.jpg" loading="lazy" decoding="async" alt="VF 6 brochure — page 4" />
+                  <figcaption>PAGE 04</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-12.jpg" loading="lazy" decoding="async" alt="VF 6 brochure — page 5" />
+                  <figcaption>PAGE 05</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-13.jpg" loading="lazy" decoding="async" alt="VF 6 brochure — page 6" />
+                  <figcaption>PAGE 06</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-14.jpg" loading="lazy" decoding="async" alt="VF 6 brochure — page 7" />
+                  <figcaption>PAGE 07</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-15.jpg" loading="lazy" decoding="async" alt="VF 6 brochure — page 8" />
+                  <figcaption>PAGE 08</figcaption>
+                </figure></div>
               </div>
             </article>
 
             <article class="lineup-car brochure-car lineup-car-reverse reveal">
               <div class="lineup-image-wrap">
-                <img
-                  class="color-changing-car"
-                  decoding="async"
-                  loading="lazy"
-                  src="https://res.cloudinary.com/mufautoshow/image/upload/f_auto/w_2400/v1763958779/moas/news/1763958812_vinfast-vf-7-crossover-coupe-listrik-racikan-desainer-italia.png"
-                  alt="VinFast VF 7"
-                />
+                <img class="color-changing-car" decoding="async" loading="lazy" src="https://static-cms-prod.vinfastauto.in/statics/2025-09/vf7_intro.webp" alt="VinFast VF 7" />
               </div>
-              <div class="car-color-selector" data-model="vf7">
-                <div class="car-color-label">
-                  Exterior Colour
-                  <strong class="selected-color-name">Infinity Blanc</strong>
-                </div>
-                <div
-                  class="car-color-swatches"
-                  role="group"
-                  aria-label="VF 7 exterior colours"
-                >
-                  <button
-                    type="button"
-                    class="car-color-swatch is-selected"
-                    style="--swatch: #f1f0ea"
-                    data-name="Infinity Blanc"
-                    data-filter="none"
-                    aria-label="Infinity Blanc"
-                    aria-pressed="true"
-                  ></button>
-                  <button
-                    type="button"
-                    class="car-color-swatch"
-                    style="--swatch: #17191b"
-                    data-name="Jet Black"
-                    data-filter="grayscale(.35) contrast(1.35) saturate(.75)"
-                    aria-label="Jet Black"
-                    aria-pressed="false"
-                  ></button>
-                  <button
-                    type="button"
-                    class="car-color-swatch"
-                    style="--swatch: #aeb5b8"
-                    data-name="Desat Silver"
-                    data-filter="grayscale(.45) contrast(1.04) saturate(.9)"
-                    aria-label="Desat Silver"
-                    aria-pressed="false"
-                  ></button>
-                  <button
-                    type="button"
-                    class="car-color-swatch"
-                    style="--swatch: #62686d"
-                    data-name="Zenith Grey"
-                    data-filter="grayscale(.72) contrast(1.12) saturate(.85)"
-                    aria-label="Zenith Grey"
-                    aria-pressed="false"
-                  ></button>
-                  <button
-                    type="button"
-                    class="car-color-swatch"
-                    style="--swatch: #a51f31"
-                    data-name="Solar Ruby"
-                    data-filter="saturate(4.2) hue-rotate(319deg) contrast(1.08)"
-                    aria-label="Solar Ruby"
-                    aria-pressed="false"
-                  ></button>
-                  <button
-                    type="button"
-                    class="car-color-swatch"
-                    style="--swatch: #315542"
-                    data-name="Ivy Green"
-                    data-filter="saturate(3.4) hue-rotate(58deg) contrast(1.08)"
-                    aria-label="Ivy Green"
-                    aria-pressed="false"
-                  ></button>
-                  <button
-                    type="button"
-                    class="car-color-swatch"
-                    style="--swatch: #315c76"
-                    data-name="Moonlight Ocean"
-                    data-filter="saturate(3.4) hue-rotate(157deg) contrast(1.08)"
-                    aria-label="Moonlight Ocean"
-                    aria-pressed="false"
-                  ></button>
-                </div>
-              </div>
+              <div class="car-color-selector" data-model="vf7"><div class="car-color-label">Exterior Colour <strong class="selected-color-name">Infinity Blanc</strong></div><div class="car-color-swatches" role="group" aria-label="VF 7 exterior colours">
+<button type="button" class="car-color-swatch is-selected" style="--swatch:#f1f0ea" data-name="Infinity Blanc" data-filter="none" aria-label="Infinity Blanc" aria-pressed="true"></button>
+<button type="button" class="car-color-swatch" style="--swatch:#17191b" data-name="Jet Black" data-filter="grayscale(.35) contrast(1.35) saturate(.75)" aria-label="Jet Black" aria-pressed="false"></button>
+<button type="button" class="car-color-swatch" style="--swatch:#aeb5b8" data-name="Desat Silver" data-filter="grayscale(.45) contrast(1.04) saturate(.9)" aria-label="Desat Silver" aria-pressed="false"></button>
+<button type="button" class="car-color-swatch" style="--swatch:#62686d" data-name="Zenith Grey" data-filter="grayscale(.72) contrast(1.12) saturate(.85)" aria-label="Zenith Grey" aria-pressed="false"></button>
+<button type="button" class="car-color-swatch" style="--swatch:#a51f31" data-name="Solar Ruby" data-filter="saturate(4.2) hue-rotate(319deg) contrast(1.08)" aria-label="Solar Ruby" aria-pressed="false"></button>
+<button type="button" class="car-color-swatch" style="--swatch:#315542" data-name="Ivy Green" data-filter="saturate(3.4) hue-rotate(58deg) contrast(1.08)" aria-label="Ivy Green" aria-pressed="false"></button>
+<button type="button" class="car-color-swatch" style="--swatch:#315c76" data-name="Moonlight Ocean" data-filter="saturate(3.4) hue-rotate(157deg) contrast(1.08)" aria-label="Moonlight Ocean" aria-pressed="false"></button>
+</div></div>
               <div class="lineup-copy">
                 <div class="lineup-number">02</div>
                 <h3>VF 7</h3>
@@ -8955,86 +8556,42 @@
               </div>
               <div class="brochure-showcase">
                 <div class="brochure-head">
-                  <div>
-                    <span class="brochure-kicker">COMPLETE BROCHURE</span>
-                    <h4>VF 7</h4>
-                  </div>
+                  <div><span class="brochure-kicker">COMPLETE BROCHURE</span><h4>VF 7</h4></div>
                   <span>8 brochure pages</span>
                 </div>
                 <div class="brochure-pages">
-                  <figure class="brochure-page is-active">
-                    <img
-                      src="assets/vinfast-embedded-16.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF 7 brochure — page 1"
-                    />
-                    <figcaption>PAGE 01</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-17.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF 7 brochure — page 2"
-                    />
-                    <figcaption>PAGE 02</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-18.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF 7 brochure — page 3"
-                    />
-                    <figcaption>PAGE 03</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-19.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF 7 brochure — page 4"
-                    />
-                    <figcaption>PAGE 04</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-20.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF 7 brochure — page 5"
-                    />
-                    <figcaption>PAGE 05</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-21.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF 7 brochure — page 6"
-                    />
-                    <figcaption>PAGE 06</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-22.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF 7 brochure — page 7"
-                    />
-                    <figcaption>PAGE 07</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-23.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF 7 brochure — page 8"
-                    />
-                    <figcaption>PAGE 08</figcaption>
-                  </figure>
-                </div>
+                <figure class="brochure-page is-active">
+                  <img src="assets/vinfast-embedded-16.jpg" loading="lazy" decoding="async" alt="VF 7 brochure — page 1" />
+                  <figcaption>PAGE 01</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-17.jpg" loading="lazy" decoding="async" alt="VF 7 brochure — page 2" />
+                  <figcaption>PAGE 02</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-18.jpg" loading="lazy" decoding="async" alt="VF 7 brochure — page 3" />
+                  <figcaption>PAGE 03</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-19.jpg" loading="lazy" decoding="async" alt="VF 7 brochure — page 4" />
+                  <figcaption>PAGE 04</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-20.jpg" loading="lazy" decoding="async" alt="VF 7 brochure — page 5" />
+                  <figcaption>PAGE 05</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-21.jpg" loading="lazy" decoding="async" alt="VF 7 brochure — page 6" />
+                  <figcaption>PAGE 06</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-22.jpg" loading="lazy" decoding="async" alt="VF 7 brochure — page 7" />
+                  <figcaption>PAGE 07</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-23.jpg" loading="lazy" decoding="async" alt="VF 7 brochure — page 8" />
+                  <figcaption>PAGE 08</figcaption>
+                </figure></div>
               </div>
             </article>
 
@@ -9045,198 +8602,70 @@
                 <p>SPACIOUS.<br />VERSATILE.<br />ALL-ELECTRIC.</p>
               </div>
               <div class="lineup-image-wrap">
-                <img
-                  class="color-changing-car"
-                  decoding="async"
-                  loading="lazy"
-                  src="https://www.v3cars.com/cdn-cgi/image/width=1920%2Cquality=75%2Cformat=auto/https://assets.v3cars.com/media/model-imgs/745023vinfast-vf-mpv-7.webp"
-                  alt="VinFast VF MPV 7"
-                />
+                <img class="color-changing-car" decoding="async" loading="lazy" src="https://vinfastauto.in/static/delivery/mpv7/images/car-cutout-desktop-v3.jpg" alt="VinFast VF MPV 7" />
               </div>
-              <div class="car-color-selector" data-model="mpv7">
-                <div class="car-color-label">
-                  Exterior Colour
-                  <strong class="selected-color-name">Jet Black</strong>
-                </div>
-                <div
-                  class="car-color-swatches"
-                  role="group"
-                  aria-label="VF MPV 7 exterior colours"
-                >
-                  <button
-                    type="button"
-                    class="car-color-swatch is-selected"
-                    style="--swatch: #17191b"
-                    data-name="Jet Black"
-                    data-filter="grayscale(.35) contrast(1.35) saturate(.75)"
-                    aria-label="Jet Black"
-                    aria-pressed="true"
-                  ></button>
-                  <button
-                    type="button"
-                    class="car-color-swatch"
-                    style="--swatch: #f1f0ea"
-                    data-name="Infinity Blanc"
-                    data-filter="none"
-                    aria-label="Infinity Blanc"
-                    aria-pressed="false"
-                  ></button>
-                  <button
-                    type="button"
-                    class="car-color-swatch"
-                    style="--swatch: #315c76"
-                    data-name="Moonlit Ocean"
-                    data-filter="saturate(3.4) hue-rotate(157deg) contrast(1.08)"
-                    aria-label="Moonlit Ocean"
-                    aria-pressed="false"
-                  ></button>
-                  <button
-                    type="button"
-                    class="car-color-swatch"
-                    style="--swatch: #62686d"
-                    data-name="Zenith Grey"
-                    data-filter="grayscale(.72) contrast(1.12) saturate(.85)"
-                    aria-label="Zenith Grey"
-                    aria-pressed="false"
-                  ></button>
-                  <button
-                    type="button"
-                    class="car-color-swatch"
-                    style="--swatch: #a51f31"
-                    data-name="Solar Ruby"
-                    data-filter="saturate(4.2) hue-rotate(319deg) contrast(1.08)"
-                    aria-label="Solar Ruby"
-                    aria-pressed="false"
-                  ></button>
-                  <button
-                    type="button"
-                    class="car-color-swatch"
-                    style="--swatch: #6b4e3b"
-                    data-name="Introspective Brown"
-                    data-filter="saturate(1.8) hue-rotate(337deg) contrast(1.05)"
-                    aria-label="Introspective Brown"
-                    aria-pressed="false"
-                  ></button>
-                </div>
-              </div>
+              <div class="car-color-selector" data-model="mpv7"><div class="car-color-label">Exterior Colour <strong class="selected-color-name">Jet Black</strong></div><div class="car-color-swatches" role="group" aria-label="VF MPV 7 exterior colours">
+<button type="button" class="car-color-swatch is-selected" style="--swatch:#17191b" data-name="Jet Black" data-filter="grayscale(.35) contrast(1.35) saturate(.75)" aria-label="Jet Black" aria-pressed="true"></button>
+<button type="button" class="car-color-swatch" style="--swatch:#f1f0ea" data-name="Infinity Blanc" data-filter="none" aria-label="Infinity Blanc" aria-pressed="false"></button>
+<button type="button" class="car-color-swatch" style="--swatch:#315c76" data-name="Moonlit Ocean" data-filter="saturate(3.4) hue-rotate(157deg) contrast(1.08)" aria-label="Moonlit Ocean" aria-pressed="false"></button>
+<button type="button" class="car-color-swatch" style="--swatch:#62686d" data-name="Zenith Grey" data-filter="grayscale(.72) contrast(1.12) saturate(.85)" aria-label="Zenith Grey" aria-pressed="false"></button>
+<button type="button" class="car-color-swatch" style="--swatch:#a51f31" data-name="Solar Ruby" data-filter="saturate(4.2) hue-rotate(319deg) contrast(1.08)" aria-label="Solar Ruby" aria-pressed="false"></button>
+<button type="button" class="car-color-swatch" style="--swatch:#6b4e3b" data-name="Introspective Brown" data-filter="saturate(1.8) hue-rotate(337deg) contrast(1.05)" aria-label="Introspective Brown" aria-pressed="false"></button>
+</div></div>
               <div class="brochure-showcase">
                 <div class="brochure-head">
-                  <div>
-                    <span class="brochure-kicker">COMPLETE BROCHURE</span>
-                    <h4>VF MPV 7</h4>
-                  </div>
+                  <div><span class="brochure-kicker">COMPLETE BROCHURE</span><h4>VF MPV 7</h4></div>
                   <span>12 brochure pages</span>
                 </div>
                 <div class="brochure-pages">
-                  <figure class="brochure-page is-active">
-                    <img
-                      src="assets/vinfast-embedded-24.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF MPV 7 brochure — page 1"
-                    />
-                    <figcaption>PAGE 01</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-25.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF MPV 7 brochure — page 2"
-                    />
-                    <figcaption>PAGE 02</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-26.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF MPV 7 brochure — page 3"
-                    />
-                    <figcaption>PAGE 03</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-27.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF MPV 7 brochure — page 4"
-                    />
-                    <figcaption>PAGE 04</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-28.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF MPV 7 brochure — page 5"
-                    />
-                    <figcaption>PAGE 05</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-29.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF MPV 7 brochure — page 6"
-                    />
-                    <figcaption>PAGE 06</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-30.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF MPV 7 brochure — page 7"
-                    />
-                    <figcaption>PAGE 07</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-31.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF MPV 7 brochure — page 8"
-                    />
-                    <figcaption>PAGE 08</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-32.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF MPV 7 brochure — page 9"
-                    />
-                    <figcaption>PAGE 09</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-33.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF MPV 7 brochure — page 10"
-                    />
-                    <figcaption>PAGE 10</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-34.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF MPV 7 brochure — page 11"
-                    />
-                    <figcaption>PAGE 11</figcaption>
-                  </figure>
-                  <figure class="brochure-page">
-                    <img
-                      src="assets/vinfast-embedded-35.jpg"
-                      loading="lazy"
-                      decoding="async"
-                      alt="VF MPV 7 brochure — page 12"
-                    />
-                    <figcaption>PAGE 12</figcaption>
-                  </figure>
-                </div>
+                <figure class="brochure-page is-active">
+                  <img src="assets/vinfast-embedded-24.jpg" loading="lazy" decoding="async" alt="VF MPV 7 brochure — page 1" />
+                  <figcaption>PAGE 01</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-25.jpg" loading="lazy" decoding="async" alt="VF MPV 7 brochure — page 2" />
+                  <figcaption>PAGE 02</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-26.jpg" loading="lazy" decoding="async" alt="VF MPV 7 brochure — page 3" />
+                  <figcaption>PAGE 03</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-27.jpg" loading="lazy" decoding="async" alt="VF MPV 7 brochure — page 4" />
+                  <figcaption>PAGE 04</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-28.jpg" loading="lazy" decoding="async" alt="VF MPV 7 brochure — page 5" />
+                  <figcaption>PAGE 05</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-29.jpg" loading="lazy" decoding="async" alt="VF MPV 7 brochure — page 6" />
+                  <figcaption>PAGE 06</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-30.jpg" loading="lazy" decoding="async" alt="VF MPV 7 brochure — page 7" />
+                  <figcaption>PAGE 07</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-31.jpg" loading="lazy" decoding="async" alt="VF MPV 7 brochure — page 8" />
+                  <figcaption>PAGE 08</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-32.jpg" loading="lazy" decoding="async" alt="VF MPV 7 brochure — page 9" />
+                  <figcaption>PAGE 09</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-33.jpg" loading="lazy" decoding="async" alt="VF MPV 7 brochure — page 10" />
+                  <figcaption>PAGE 10</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-34.jpg" loading="lazy" decoding="async" alt="VF MPV 7 brochure — page 11" />
+                  <figcaption>PAGE 11</figcaption>
+                </figure>
+                <figure class="brochure-page">
+                  <img src="assets/vinfast-embedded-35.jpg" loading="lazy" decoding="async" alt="VF MPV 7 brochure — page 12" />
+                  <figcaption>PAGE 12</figcaption>
+                </figure></div>
               </div>
             </article>
           </div>
@@ -9270,7 +8699,10 @@
     <footer class="footer">
       <div class="container footer-grid">
         <div class="footer-brand">
-          <img src="assets/vinfast-embedded-36.png" alt="Unico Motors" />
+          <img
+            src="assets/vinfast-embedded-36.png"
+            alt="Unico Motors"
+          />
           <p>
             UNICO MOTORS, a unit of Unico Logistics & Carrier Pvt. Ltd. with
             myTVS, offers modern tools, quality car repair and reliable
@@ -9394,462 +8826,304 @@
         <circle cx="91" cy="53" r="5" fill="#fff" />
       </svg>
     </div>
-    <script>
-      (function () {
-        function initVinFastBrochureSliders() {
-          document
-            .querySelectorAll(".vinfast-brochure-lineup .brochure-car")
-            .forEach(function (car) {
-              var pages = Array.from(car.querySelectorAll(".brochure-page"));
-              var showcase = car.querySelector(".brochure-showcase");
-              var pagesWrap = car.querySelector(".brochure-pages");
-              var head = car.querySelector(".brochure-head");
+  <script>
+(function () {
+  function initVinFastBrochureSliders() {
+    document.querySelectorAll('.vinfast-brochure-lineup .brochure-car').forEach(function (car) {
+      var pages = Array.from(car.querySelectorAll('.brochure-page'));
+      var showcase = car.querySelector('.brochure-showcase');
+      var pagesWrap = car.querySelector('.brochure-pages');
+      var head = car.querySelector('.brochure-head');
 
-              if (
-                !pages.length ||
-                !showcase ||
-                !pagesWrap ||
-                !head ||
-                showcase.dataset.sliderReady === "true"
-              )
-                return;
-              showcase.dataset.sliderReady = "true";
+      if (!pages.length || !showcase || !pagesWrap || !head || showcase.dataset.sliderReady === 'true') return;
+      showcase.dataset.sliderReady = 'true';
 
-              /* Put the navigation in the top brochure header. */
-              var controls = head.querySelector(".brochure-controls");
-              if (!controls) {
-                controls = document.createElement("div");
-                controls.className = "brochure-controls";
-                controls.innerHTML =
-                  '<button class="brochure-arrow brochure-prev" type="button" aria-label="Previous brochure page">&#10094;</button>' +
-                  '<button class="brochure-arrow brochure-next" type="button" aria-label="Next brochure page">&#10095;</button>';
-                head.appendChild(controls);
-              }
-
-              var counter = head.querySelector(".brochure-counter");
-              if (!counter) {
-                counter = document.createElement("span");
-                counter.className = "brochure-counter";
-                head.appendChild(counter);
-              }
-
-              /* Remove any old controls/counter that may have been inserted inside the image area. */
-              pagesWrap
-                .querySelectorAll(".brochure-controls,.brochure-counter")
-                .forEach(function (el) {
-                  el.remove();
-                });
-
-              var total = pages.length;
-              var current = 0;
-              var timer = null;
-              var interval = 4500;
-
-              function show(index) {
-                current = (index + total) % total;
-                pages.forEach(function (page, i) {
-                  page.classList.toggle("is-active", i === current);
-                  page.setAttribute(
-                    "aria-hidden",
-                    i === current ? "false" : "true",
-                  );
-                });
-                counter.textContent =
-                  String(current + 1).padStart(2, "0") +
-                  " / " +
-                  String(total).padStart(2, "0") +
-                  " BROCHURE PAGES";
-              }
-
-              function restartAuto() {
-                if (timer) clearInterval(timer);
-                if (total > 1) {
-                  timer = setInterval(function () {
-                    show(current + 1);
-                  }, interval);
-                }
-              }
-
-              var prev = controls.querySelector(".brochure-prev");
-              var next = controls.querySelector(".brochure-next");
-
-              if (prev)
-                prev.addEventListener("click", function (e) {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  show(current - 1);
-                  restartAuto();
-                });
-
-              if (next)
-                next.addEventListener("click", function (e) {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  show(current + 1);
-                  restartAuto();
-                });
-
-              car.addEventListener("keydown", function (event) {
-                if (event.key === "ArrowLeft") {
-                  event.preventDefault();
-                  show(current - 1);
-                  restartAuto();
-                } else if (event.key === "ArrowRight") {
-                  event.preventDefault();
-                  show(current + 1);
-                  restartAuto();
-                }
-              });
-
-              car.setAttribute("tabindex", "0");
-              show(0);
-              restartAuto();
-            });
-        }
-
-        if (document.readyState === "loading") {
-          document.addEventListener(
-            "DOMContentLoaded",
-            initVinFastBrochureSliders,
-          );
-        } else {
-          initVinFastBrochureSliders();
-        }
-      })();
-    </script>
-
-    <style id="vinfast-color-background-fix">
-      /* Color selector fix: hue/saturation changes preserve the neutral photo background.
-   The previous sepia/brightness filters were tinting and darkening the entire image. */
-      .vinfast-brochure-lineup .lineup-image-wrap img.color-changing-car {
-        --car-color-filter: none !important;
-        filter: var(--car-color-filter)
-          drop-shadow(0 24px 20px rgba(0, 0, 0, 0.14)) !important;
-        mix-blend-mode: multiply !important;
+      /* Put the navigation in the top brochure header. */
+      var controls = head.querySelector('.brochure-controls');
+      if (!controls) {
+        controls = document.createElement('div');
+        controls.className = 'brochure-controls';
+        controls.innerHTML =
+          '<button class="brochure-arrow brochure-prev" type="button" aria-label="Previous brochure page">&#10094;</button>' +
+          '<button class="brochure-arrow brochure-next" type="button" aria-label="Next brochure page">&#10095;</button>';
+        head.appendChild(controls);
       }
-    </style>
 
-    <style id="vinfast-true-car-color-fix">
-      /* The original photo stays visible as the untouched background. The canvas above it contains only the extracted vehicle. */
-      .vinfast-brochure-lineup .lineup-image-wrap img.color-changing-car {
-        filter: none !important;
-        mix-blend-mode: normal !important;
-        transition: opacity 0.28s ease !important;
+      var counter = head.querySelector('.brochure-counter');
+      if (!counter) {
+        counter = document.createElement('span');
+        counter.className = 'brochure-counter';
+        head.appendChild(counter);
       }
-      .vinfast-brochure-lineup .lineup-image-wrap .vinfast-color-base-canvas,
-      .vinfast-brochure-lineup
-        .lineup-image-wrap
-        .vinfast-color-overlay-canvas {
-        z-index: 3;
-        display: block;
+
+      /* Remove any old controls/counter that may have been inserted inside the image area. */
+      pagesWrap.querySelectorAll('.brochure-controls,.brochure-counter').forEach(function (el) {
+        el.remove();
+      });
+
+      var total = pages.length;
+      var current = 0;
+      var timer = null;
+      var interval = 4500;
+
+      function show(index) {
+        current = (index + total) % total;
+        pages.forEach(function (page, i) {
+          page.classList.toggle('is-active', i === current);
+          page.setAttribute('aria-hidden', i === current ? 'false' : 'true');
+        });
+        counter.textContent = String(current + 1).padStart(2, '0') + ' / ' + String(total).padStart(2, '0') + ' BROCHURE PAGES';
       }
-      .vinfast-brochure-lineup
-        .lineup-image-wrap
-        .vinfast-color-overlay-canvas {
-        z-index: 4;
+
+      function restartAuto() {
+        if (timer) clearInterval(timer);
+        if (total > 1) {
+          timer = setInterval(function () {
+            show(current + 1);
+          }, interval);
+        }
       }
-    </style>
-    <script id="vinfast-color-selector-script">
-      (function () {
-        /*
-         * The source vehicle photos are not transparent PNG cut-outs; they contain
-         * their own studio background. A CSS filter therefore recolors the whole
-         * photograph. This version creates a transparent vehicle layer in a canvas
-         * by removing the connected background from the image edges, then applies
-         * the selected colour only to that vehicle layer. The original photograph
-         * remains underneath, untouched.
-         */
-        var COLOR_MAP = {
-          "Infinity Blanc": "#f1f0ea",
-          "Jet Black": "#17191b",
-          "Desat Silver": "#aeb5b8",
-          "Zenith Grey": "#62686d",
-          "Solar Ruby": "#a51f31",
-          "Ivy Green": "#315542",
-          "Moonlight Ocean": "#315c76",
-          "Introspective Brown": "#6b4e3b",
-        };
 
-        function hexToRgb(hex) {
-          hex = hex.replace("#", "");
-          return {
-            r: parseInt(hex.substring(0, 2), 16),
-            g: parseInt(hex.substring(2, 4), 16),
-            b: parseInt(hex.substring(4, 6), 16),
-          };
+      var prev = controls.querySelector('.brochure-prev');
+      var next = controls.querySelector('.brochure-next');
+
+      if (prev) prev.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        show(current - 1);
+        restartAuto();
+      });
+
+      if (next) next.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        show(current + 1);
+        restartAuto();
+      });
+
+      car.addEventListener('keydown', function (event) {
+        if (event.key === 'ArrowLeft') {
+          event.preventDefault();
+          show(current - 1);
+          restartAuto();
+        } else if (event.key === 'ArrowRight') {
+          event.preventDefault();
+          show(current + 1);
+          restartAuto();
         }
+      });
 
-        function clamp(v) {
-          return Math.max(0, Math.min(255, v));
+      car.setAttribute('tabindex', '0');
+      show(0);
+      restartAuto();
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initVinFastBrochureSliders);
+  } else {
+    initVinFastBrochureSliders();
+  }
+})();
+</script>
+
+
+<style id="vinfast-simple-car-shade-fix">
+/* =========================================================
+   VINFAST CAR SHADE FIX
+   IMPORTANT: keep the existing car image and layout exactly as-is.
+   The SVG filters change the red body colour while white background,
+   black trim, glass and shadows remain visually neutral.
+   ========================================================= */
+.vinfast-brochure-lineup .lineup-image-wrap{
+  position:relative !important;
+  isolation:isolate !important;
+  overflow:visible !important;
+  background:transparent !important;
+}
+
+/* The source colour renders are high-resolution studio photos.
+   Multiply removes the white studio field visually, leaving the vehicle
+   and its natural dark details/shadow visible without a white rectangle. */
+.vinfast-brochure-lineup .lineup-image-wrap img.color-changing-car{
+  width:100% !important;
+  height:auto !important;
+  object-fit:contain !important;
+  object-position:center bottom !important;
+  display:block !important;
+  filter:drop-shadow(0 24px 20px rgba(0,0,0,.14)) !important;
+  mix-blend-mode:multiply !important;
+  opacity:1 !important;
+  background:transparent !important;
+  transition:opacity .22s ease !important;
+  image-rendering:auto !important;
+}
+
+.vinfast-brochure-lineup .brochure-car:hover .lineup-image-wrap img.color-changing-car,
+.vinfast-brochure-lineup .brochure-car .lineup-image-wrap img.color-changing-car{
+  transform:none !important;
+}
+</style>
+
+<!-- SVG filters are invisible definitions only; they do NOT add another car. -->
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;left:-9999px;top:-9999px;overflow:hidden">
+  <defs>
+    <!-- Original / red -->
+    <filter id="vf-shade-original" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+    </filter>
+
+    <!-- Green: red body -> green, white/black stay neutral -->
+    <filter id="vf-shade-green" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="0 1 0 0 0  1 0 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+    </filter>
+
+    <!-- Blue: red body -> blue, white/black stay neutral -->
+    <filter id="vf-shade-blue" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="0 1 0 0 0  0 0 1 0 0  1 0 0 0 0  0 0 0 1 0"/>
+    </filter>
+
+    <!-- Deep ruby/red -->
+    <filter id="vf-shade-ruby" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="1.12 -0.10 0 0 0  -0.05 0.55 0 0 0  0 0 0.48 0 0  0 0 0 1 0"/>
+    </filter>
+
+    <!-- Neutral grey/silver: remove chroma; white remains white -->
+    <filter id="vf-shade-silver" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0 0 0 1 0"/>
+      <feComponentTransfer>
+        <feFuncR type="gamma" amplitude="1" exponent="0.72" offset="0"/>
+        <feFuncG type="gamma" amplitude="1" exponent="0.72" offset="0"/>
+        <feFuncB type="gamma" amplitude="1" exponent="0.72" offset="0"/>
+      </feComponentTransfer>
+    </filter>
+
+    <!-- Dark grey -->
+    <filter id="vf-shade-grey" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0 0 0 1 0"/>
+      <feComponentTransfer>
+        <feFuncR type="gamma" amplitude="1" exponent="1.55" offset="0"/>
+        <feFuncG type="gamma" amplitude="1" exponent="1.55" offset="0"/>
+        <feFuncB type="gamma" amplitude="1" exponent="1.55" offset="0"/>
+      </feComponentTransfer>
+    </filter>
+
+    <!-- Black: grayscale + strong gamma; pure white background remains white -->
+    <filter id="vf-shade-black" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0 0 0 1 0"/>
+      <feComponentTransfer>
+        <feFuncR type="gamma" amplitude="1" exponent="2.35" offset="0"/>
+        <feFuncG type="gamma" amplitude="1" exponent="2.35" offset="0"/>
+        <feFuncB type="gamma" amplitude="1" exponent="2.35" offset="0"/>
+      </feComponentTransfer>
+    </filter>
+
+    <!-- White: neutralize the red paint while keeping white background white -->
+    <filter id="vf-shade-white" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0 0 0 1 0"/>
+      <feComponentTransfer>
+        <feFuncR type="gamma" amplitude="1" exponent="0.35" offset="0"/>
+        <feFuncG type="gamma" amplitude="1" exponent="0.35" offset="0"/>
+        <feFuncB type="gamma" amplitude="1" exponent="0.35" offset="0"/>
+      </feComponentTransfer>
+    </filter>
+
+    <!-- Brown: warm red/brown body while neutral pixels remain neutral -->
+    <filter id="vf-shade-brown" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="0.72 0.28 0 0 0  0.22 0.78 0 0 0  0.08 0.08 0.84 0 0  0 0 0 1 0"/>
+    </filter>
+  </defs>
+</svg>
+
+<script id="vinfast-simple-car-shade-script">
+(function(){
+  /* Real colour-specific images. The same existing <img> is swapped — no
+     canvas, no overlay, no duplicate car. The official VinFast pages confirm
+     the available colour sets for VF7 and MPV7. */
+  var CAR_IMAGES = {
+    vf6: {
+      "Infinity Blanc": "https://asset.autocarindia.com/static/models/colors/20260813_044229_68f6797d.jpg?fm=auto&q=95&w=2400",
+      "Jet Black": "https://asset.autocarindia.com/static/models/colors/20260813_044248_4eac7cce.jpg?fm=auto&q=95&w=2400",
+      "Desat Silver": "https://asset.autocarindia.com/static/models/colors/20260813_044219_6dbd0780.jpg?fm=auto&q=95&w=2400",
+      "Zenith Grey": "https://asset.autocarindia.com/static/models/colors/20260813_044319_654b2c0a.jpg?fm=auto&q=95&w=2400",
+      "Solar Ruby": "https://asset.autocarindia.com/static/models/colors/20260813_044310_a51d32bb.jpg?fm=auto&q=95&w=2400",
+      "Ivy Green": "https://asset.autocarindia.com/static/models/colors/20260813_044239_af5cde4b.jpg?fm=auto&q=95&w=2400",
+      "Moonlight Ocean": "https://asset.autocarindia.com/static/models/colors/20260813_044300_2d2c9287.jpg?fm=auto&q=95&w=2400"
+    },
+    vf7: {
+      "Infinity Blanc": "https://asset.autocarindia.com/static/models/colors/20260812_103724_f5427a46.jpg?fm=auto&q=95&w=2400",
+      "Jet Black": "https://asset.autocarindia.com/static/models/colors/20260812_103754_c483160f.jpg?fm=auto&q=95&w=2400",
+      "Desat Silver": "https://asset.autocarindia.com/static/models/colors/20260812_103710_9b026faf.jpg?fm=auto&q=95&w=2400",
+      "Zenith Grey": "https://asset.autocarindia.com/static/models/colors/20260812_103833_057385ac.jpg?fm=auto&q=95&w=2400",
+      "Solar Ruby": "https://asset.autocarindia.com/static/models/colors/20260812_103822_4e576a12.jpg?fm=auto&q=95&w=2400",
+      "Ivy Green": "https://asset.autocarindia.com/static/models/colors/20260812_103735_76b178fb.jpg?fm=auto&q=95&w=2400",
+      "Moonlight Ocean": "https://asset.autocarindia.com/static/models/colors/20260812_103806_a7a5069e.jpg?fm=auto&q=95&w=2400"
+    },
+    mpv7: {
+      "Jet Black": "https://asset.autocarindia.com/static/models/colors/20260402_104806_1b7d01a1.png?fm=auto&q=95&w=2400",
+      "Infinity Blanc": "https://asset.autocarindia.com/static/models/colors/20260402_104744_67968f23.png?fm=auto&q=95&w=2400",
+      "Moonlit Ocean": "https://asset.autocarindia.com/static/models/colors/20260402_104829_4dab038b.png?fm=auto&q=95&w=2400",
+      "Zenith Grey": "https://asset.autocarindia.com/static/models/colors/20260402_104847_131500a7.png?fm=auto&q=95&w=2400",
+      "Solar Ruby": "https://asset.autocarindia.com/static/models/colors/20260402_104839_3a7dae0f.png?fm=auto&q=95&w=2400",
+      "Introspective Brown": "https://asset.autocarindia.com/static/models/colors/20260402_104755_531e0768.png?fm=auto&q=95&w=2400"
+    }
+  };
+
+  function preload(map){
+    Object.keys(map).forEach(function(key){
+      var im=new Image();
+      im.decoding="async";
+      im.src=map[key];
+    });
+  }
+
+  function initCarShades(){
+    document.querySelectorAll('.vinfast-brochure-lineup .car-color-selector').forEach(function(selector){
+      if(selector.dataset.shadeReady === 'true') return;
+      var car=selector.closest('.brochure-car');
+      var image=car && car.querySelector('.lineup-image-wrap img.color-changing-car');
+      var name=selector.querySelector('.selected-color-name');
+      var swatches=selector.querySelectorAll('.car-color-swatch');
+      var model=(selector.dataset.model||'').toLowerCase();
+      var map=CAR_IMAGES[model];
+      if(!image || !swatches.length || !map) return;
+      selector.dataset.shadeReady='true';
+
+      function apply(button){
+        var selectedName=button && (button.dataset.name || button.getAttribute('aria-label')) || '';
+        var nextSrc=map[selectedName];
+        if(nextSrc){
+          image.style.opacity='0';
+          var done=function(){ image.style.opacity='1'; };
+          image.onload=done;
+          image.onerror=function(){ image.style.opacity='1'; };
+          image.src=nextSrc;
         }
+        if(name) name.textContent=selectedName;
+      }
 
-        function colorDistance(r1, g1, b1, r2, g2, b2) {
-          var dr = r1 - r2;
-          var dg = g1 - g2;
-          var db = b1 - b2;
-          return Math.sqrt(dr * dr + dg * dg + db * db);
-        }
-
-        function buildVehicleLayer(img, canvas) {
-          var w = img.naturalWidth;
-          var h = img.naturalHeight;
-          if (!w || !h) return false;
-
-          canvas.width = w;
-          canvas.height = h;
-          var ctx = canvas.getContext("2d", { willReadFrequently: true });
-          ctx.clearRect(0, 0, w, h);
-          ctx.drawImage(img, 0, 0, w, h);
-
-          var source;
-          try {
-            source = ctx.getImageData(0, 0, w, h);
-          } catch (err) {
-            return false;
-          }
-
-          var data = source.data;
-          var total = w * h;
-          var visited = new Uint8Array(total);
-          var background = new Uint8Array(total);
-          var queue = new Int32Array(total);
-          var qStart = 0;
-          var qEnd = 0;
-
-          /* Sample the four corners to estimate the studio background. */
-          var samples = [];
-          [
-            [0, 0],
-            [w - 1, 0],
-            [0, h - 1],
-            [w - 1, h - 1],
-          ].forEach(function (p) {
-            var i = (p[1] * w + p[0]) * 4;
-            samples.push([data[i], data[i + 1], data[i + 2]]);
+      swatches.forEach(function(button){
+        button.addEventListener('click',function(e){
+          e.preventDefault();
+          e.stopPropagation();
+          swatches.forEach(function(item){
+            item.classList.remove('is-selected');
+            item.setAttribute('aria-pressed','false');
           });
-          var br =
-            samples.reduce(function (a, p) {
-              return a + p[0];
-            }, 0) / samples.length;
-          var bg =
-            samples.reduce(function (a, p) {
-              return a + p[1];
-            }, 0) / samples.length;
-          var bb =
-            samples.reduce(function (a, p) {
-              return a + p[2];
-            }, 0) / samples.length;
+          button.classList.add('is-selected');
+          button.setAttribute('aria-pressed','true');
+          apply(button);
+        });
+      });
 
-          /* Edge flood-fill: remove only pixels that look like the connected
-             background. Vehicle pixels are not removed because the car does not
-             touch the outer image boundary. */
-          var threshold = Math.max(26, Math.min(58, Math.sqrt(w * h) * 0.018));
-          function isBackgroundPixel(x, y) {
-            var i = (y * w + x) * 4;
-            var r = data[i],
-              g = data[i + 1],
-              b = data[i + 2];
-            var d = colorDistance(r, g, b, br, bg, bb);
-            var mx = Math.max(r, g, b),
-              mn = Math.min(r, g, b);
-            var saturation = mx - mn;
-            var bgSaturation =
-              Math.max(samples[0][0], samples[0][1], samples[0][2]) -
-              Math.min(samples[0][0], samples[0][1], samples[0][2]);
-            return d < threshold && Math.abs(saturation - bgSaturation) < 34;
-          }
+      apply(selector.querySelector('.car-color-swatch.is-selected') || swatches[0]);
+      preload(map);
+    });
+  }
 
-          function push(x, y) {
-            if (x < 0 || y < 0 || x >= w || y >= h) return;
-            var n = y * w + x;
-            if (visited[n]) return;
-            visited[n] = 1;
-            if (isBackgroundPixel(x, y)) {
-              background[n] = 1;
-              queue[qEnd++] = n;
-            }
-          }
-
-          for (var x = 0; x < w; x++) {
-            push(x, 0);
-            push(x, h - 1);
-          }
-          for (var y = 1; y < h - 1; y++) {
-            push(0, y);
-            push(w - 1, y);
-          }
-
-          while (qStart < qEnd) {
-            var n = queue[qStart++];
-            var x = n % w,
-              y = (n / w) | 0;
-            push(x - 1, y);
-            push(x + 1, y);
-            push(x, y - 1);
-            push(x, y + 1);
-          }
-
-          /* Remove the connected background. Add a soft edge transition so the
-             extracted vehicle does not look cut out. */
-          var out = ctx.createImageData(w, h);
-          var od = out.data;
-          for (var p = 0; p < total; p++) {
-            var si = p * 4;
-            od[si] = data[si];
-            od[si + 1] = data[si + 1];
-            od[si + 2] = data[si + 2];
-            od[si + 3] = background[p] ? 0 : data[si + 3];
-          }
-          ctx.putImageData(out, 0, 0);
-          return true;
-        }
-
-        function setup(selector) {
-          var car = selector.closest(".brochure-car");
-          var image =
-            car &&
-            car.querySelector(".lineup-image-wrap img.color-changing-car");
-          var name = selector.querySelector(".selected-color-name");
-          var swatches = selector.querySelectorAll(".car-color-swatch");
-          if (!image || !swatches.length) return;
-
-          var wrap = image.parentElement;
-          var baseCanvas = document.createElement("canvas");
-          var colorCanvas = document.createElement("canvas");
-          var originalVehiclePixels = null;
-          baseCanvas.className = "vinfast-color-base-canvas";
-          colorCanvas.className = "vinfast-color-overlay-canvas";
-          [baseCanvas, colorCanvas].forEach(function (c) {
-            c.setAttribute("aria-hidden", "true");
-            c.style.position = "absolute";
-            c.style.inset = "0";
-            c.style.width = "100%";
-            c.style.height = "100%";
-            c.style.objectFit = "contain";
-            c.style.objectPosition = "center bottom";
-            c.style.pointerEvents = "none";
-          });
-
-          wrap.style.position = "relative";
-          wrap.appendChild(baseCanvas);
-          wrap.appendChild(colorCanvas);
-
-          function render() {
-            if (!image.complete || !image.naturalWidth) return;
-            baseCanvas.width = image.naturalWidth;
-            baseCanvas.height = image.naturalHeight;
-            var bctx = baseCanvas.getContext("2d");
-            bctx.clearRect(0, 0, baseCanvas.width, baseCanvas.height);
-            bctx.drawImage(image, 0, 0, baseCanvas.width, baseCanvas.height);
-
-            var ok = buildVehicleLayer(image, colorCanvas);
-            if (!ok) {
-              colorCanvas.style.display = "none";
-              image.style.display = "block";
-              return;
-            }
-            image.style.opacity = "0";
-            image.style.pointerEvents = "none";
-            colorCanvas.style.display = "block";
-            var octx = colorCanvas.getContext("2d", {
-              willReadFrequently: true,
-            });
-            originalVehiclePixels = octx.getImageData(
-              0,
-              0,
-              colorCanvas.width,
-              colorCanvas.height,
-            );
-            applySelected();
-          }
-
-          function applySelected() {
-            var selected = selector.querySelector(
-              ".car-color-swatch.is-selected",
-            );
-            if (!selected) return;
-            var selectedName = selected.dataset.name || "";
-            var color =
-              COLOR_MAP[selectedName] ||
-              selected.style.getPropertyValue("--swatch") ||
-              "#f1f0ea";
-            var amount =
-              selectedName === "Infinity Blanc"
-                ? 0
-                : selectedName === "Jet Black"
-                  ? 0.96
-                  : 0.86;
-            /* Always rebuild from the original extracted vehicle pixels so
-               switching colours never compounds the previous colour. */
-            if (!originalVehiclePixels) return;
-            var dst = colorCanvas.getContext("2d", {
-              willReadFrequently: true,
-            });
-            var out = dst.createImageData(
-              originalVehiclePixels.width,
-              originalVehiclePixels.height,
-            );
-            out.data.set(originalVehiclePixels.data);
-            var d = out.data,
-              rgb = hexToRgb(color);
-            for (var i = 0; i < d.length; i += 4) {
-              if (d[i + 3] === 0) continue;
-              var r = d[i],
-                g = d[i + 1],
-                b = d[i + 2];
-              if (selectedName === "Infinity Blanc") continue;
-              /* Only recolour the saturated paint/body pixels. Neutral pixels
-                 (background, glass, tyres, chrome and shadows) stay untouched. */
-              var maxc = Math.max(r, g, b),
-                minc = Math.min(r, g, b);
-              var sat = maxc - minc;
-              var lum = 0.2126 * r + 0.7152 * g + 0.0722 * b;
-              if (sat < 38 || lum < 32) continue;
-              var tr = rgb.r,
-                tg = rgb.g,
-                tb = rgb.b;
-              var targetLum = Math.max(
-                1,
-                0.2126 * tr + 0.7152 * tg + 0.0722 * tb,
-              );
-              var scale = lum / targetLum;
-              /* Keep highlights from blowing out and preserve dark trim. */
-              var nr = clamp(tr * scale),
-                ng = clamp(tg * scale),
-                nb = clamp(tb * scale);
-              d[i] = clamp(r * (1 - amount) + nr * amount);
-              d[i + 1] = clamp(g * (1 - amount) + ng * amount);
-              d[i + 2] = clamp(b * (1 - amount) + nb * amount);
-            }
-            dst.putImageData(out, 0, 0);
-            if (name) name.textContent = selectedName;
-          }
-
-          swatches.forEach(function (button) {
-            button.addEventListener("click", function () {
-              swatches.forEach(function (item) {
-                item.classList.remove("is-selected");
-                item.setAttribute("aria-pressed", "false");
-              });
-              button.classList.add("is-selected");
-              button.setAttribute("aria-pressed", "true");
-              applySelected();
-            });
-          });
-
-          if (image.complete) render();
-          else image.addEventListener("load", render, { once: true });
-        }
-
-        function init() {
-          document
-            .querySelectorAll(".vinfast-brochure-lineup .car-color-selector")
-            .forEach(setup);
-        }
-        if (document.readyState === "loading")
-          document.addEventListener("DOMContentLoaded", init);
-        else init();
-      })();
-    </script>
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initCarShades,{once:true});
+  else initCarShades();
+})();
+</script>
   </body>
 </html>
