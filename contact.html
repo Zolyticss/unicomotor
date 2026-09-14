@@ -309,6 +309,50 @@
         right: 0;
       }
 
+
+      /* VinFast nav item + EV badge — same treatment as the VinFast page. */
+      .vinfast-nav-link {
+        display: inline-flex !important;
+        align-items: center;
+        gap: 7px;
+        white-space: nowrap;
+      }
+
+      .vinfast-ev-tag {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 31px;
+        height: 22px;
+        padding: 0 6px;
+        border-radius: 2px;
+        background: #f28a18;
+        color: #fff;
+        font-size: 9px;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: 0.4px;
+        box-shadow: 0 3px 8px rgba(242, 138, 24, 0.2);
+      }
+
+      .nav-links .vinfast-nav-link::after {
+        right: 0;
+      }
+
+      @media (max-width: 900px) {
+        .vinfast-nav-link {
+          gap: 6px;
+        }
+      }
+
+      @media (max-width: 650px) {
+        .vinfast-ev-tag {
+          min-width: 27px;
+          height: 19px;
+          font-size: 8px;
+        }
+      }
+
       .nav-button {
         position: absolute;
         right: 0;
@@ -3608,7 +3652,8 @@ html.unico-transition-lock,html.unico-transition-lock body{overflow:hidden!impor
           <a href="services.html">Services</a>
           <a class="active" href="about.html">About Us</a>
           <a href="blog.html">Blog</a>
-          <a href="contact.html">Contact Us</a>
+          <a href="vinfast.html" class="vinfast-nav-link">VinFast <span class="vinfast-ev-tag">EV</span></a>
+          <a class="active" href="contact.html">Contact Us</a>
         </nav>
 
         <a href="contact.html" class="nav-button">Book Appointment</a>
