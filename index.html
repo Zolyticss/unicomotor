@@ -244,6 +244,14 @@
         flex-shrink: 0;
       }
 
+      /* Navbar: use only the same logo image as the footer. */
+      .nav-logo-image {
+        width: 145px;
+        height: auto;
+        max-height: 52px;
+        object-fit: contain;
+      }
+
       .logo-mark {
         width: 43px;
         height: 43px;
@@ -2784,10 +2792,8 @@ html.unico-transition-lock,html.unico-transition-lock body{overflow:hidden!impor
     <header class="navbar">
       <div class="container nav-inner">
         <a href="index.html" class="logo" aria-label="Unico Motors">
-          <span class="unico-logo-hover" id="unicoLogoHover">
-          <img class="unico-logo-image" src="assets/unico-home-logo.png" alt="Unico Motors" />
-          <canvas class="unico-logo-particles" aria-hidden="true"></canvas>
-        </span></a>
+          <img class="unico-logo-image nav-logo-image" src="assets/unico-home-logo.png" alt="Unico Motors" />
+        </a>
 
         <nav class="nav-links" id="navLinks">
           <a href="index.html">Home</a>
