@@ -122,6 +122,47 @@
       .nav-links a.active:after {
         right: 0;
       }
+      /* VINFAST navigation item with EV badge */
+      .nav-links .vinfast-nav {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        white-space: nowrap;
+      }
+
+      .nav-links .vinfast-nav .vinfast-ev-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 31px;
+        height: 20px;
+        padding: 0 7px;
+        box-sizing: border-box;
+        border-radius: 2px;
+        background: var(--orange);
+        color: #fff;
+        font-size: 11px;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        position: relative;
+        top: -1px;
+      }
+
+      .nav-links .vinfast-nav:after {
+        left: 0;
+        right: 100%;
+      }
+
+      .nav-links .vinfast-nav:hover:after {
+        right: 38px;
+      }
+
+      .nav-links .vinfast-nav.active:after {
+        right: 38px;
+      }
+
       .nav-cta {
         margin-left: 5px;
         background: var(--orange);
@@ -2562,7 +2603,10 @@
           <a class="active" href="services.html">Services</a>
           <a href="about.html">About Us</a>
           <a href="blog.html">Blog</a>
-        <a href="vinfast.html" class="nav-link">VINFAST</a>
+        <a href="vinfast.html" class="vinfast-nav">
+          <span>VINFAST</span>
+          <small class="vinfast-ev-badge">EV</small>
+        </a>
           <a href="contact.html">Contact Us</a>
         </nav>
         <a class="nav-cta nav-appointment" href="#appointment"
