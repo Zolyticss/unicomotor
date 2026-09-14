@@ -1966,7 +1966,7 @@
         background: radial-gradient(
           ellipse at center,
           rgba(210, 242, 255, 0.48) 0%,
-          rgba(190, 230, 255, 0.20) 42%,
+          rgba(190, 230, 255, 0.2) 42%,
           rgba(170, 220, 255, 0) 74%
         );
         filter: blur(9px);
@@ -1975,7 +1975,7 @@
         0%,
         14% {
           opacity: 0.72;
-          transform: scale(0.90);
+          transform: scale(0.9);
           filter: blur(4px);
         }
         30%,
@@ -2362,211 +2362,250 @@
         }
       }
     </style>
-  
-<style id="shared-vinfast-section">
-/* ===== VINFAST FEATURE — CLEAN WHITE EDITORIAL SECTION ===== */
-.vinfast-section{
-  position:relative;
-  overflow:hidden;
-  background:#fff;
-  color:#101418;
-  padding:100px 0;
-  border-top:1px solid #e5e8ea;
-  border-bottom:1px solid #e5e8ea;
-}
-.vinfast-bg{
-  position:absolute;
-  inset:0;
-  background:
-    radial-gradient(circle at 86% 22%,rgba(244,123,0,.075),transparent 24%),
-    linear-gradient(115deg,rgba(16,20,24,.035) 1px,transparent 1px);
-  background-size:auto,80px 80px;
-  pointer-events:none;
-}
-.vinfast-inner{
-  width:min(1200px,88%);
-  margin:auto;
-  position:relative;
-  z-index:2;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:70px;
-  align-items:center;
-}
-.vinfast-copy{max-width:610px}
-.vinfast-kicker{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  color:#f47b00;
-  font-size:10px;
-  font-weight:900;
-  letter-spacing:.18em;
-  margin-bottom:18px;
-}
-.vinfast-kicker:before{
-  content:"";
-  width:38px;
-  height:2px;
-  background:#f47b00;
-}
-.vinfast-copy h2{
-  margin:0;
-  color:#101418;
-  font-family:"Barlow Condensed",Arial,sans-serif;
-  font-size:clamp(52px,6vw,78px);
-  line-height:.88;
-  text-transform:uppercase;
-  letter-spacing:-.02em;
-}
-.vinfast-copy h2 span{color:#f47b00}
-.vinfast-intro{
-  margin:27px 0 0;
-  color:#3f484f;
-  font-size:16px;
-  line-height:1.75;
-  max-width:580px;
-}
-.vinfast-text{
-  margin:15px 0 0;
-  color:#68727a;
-  font-size:13px;
-  line-height:1.8;
-  max-width:570px;
-}
-.vinfast-text strong{color:#101418}
-.vinfast-stats{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:0;
-  margin-top:32px;
-  border:1px solid #dfe3e6;
-  background:#fff;
-}
-.vf-stat{
-  min-height:96px;
-  padding:18px;
-  background:#f7f8f9;
-  border-right:1px solid #dfe3e6;
-}
-.vf-stat:last-child{border-right:0}
-.vf-stat strong{
-  display:block;
-  font:800 28px/1 "Barlow Condensed";
-  color:#101418;
-  text-transform:uppercase;
-}
-.vf-stat span{
-  display:block;
-  margin-top:7px;
-  color:#68727a;
-  font-size:9px;
-  line-height:1.4;
-  text-transform:uppercase;
-  letter-spacing:.04em;
-}
-.vinfast-actions{
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  gap:16px;
-  margin-top:29px;
-}
-.vinfast-button{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:14px;
-  min-height:51px;
-  padding:0 22px;
-  background:#f47b00;
-  color:#fff;
-  font:800 18px/1 "Barlow Condensed";
-  text-transform:uppercase;
-  transition:.3s ease;
-}
-.vinfast-button span{font-size:20px}
-.vinfast-button:hover{
-  background:#101418;
-  color:#fff;
-  transform:translateY(-3px);
-  box-shadow:0 14px 30px rgba(16,20,24,.14);
-}
-.vinfast-secondary{
-  color:#101418;
-  font-size:11px;
-  font-weight:800;
-  text-transform:uppercase;
-  border-bottom:1px solid #aeb5ba;
-  padding-bottom:5px;
-  transition:.25s;
-}
-.vinfast-secondary:hover{
-  color:#f47b00;
-  border-color:#f47b00;
-}
-.vinfast-visual{
-  min-height:485px;
-  position:relative;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-.vinfast-image-wrap{
-  border:0;
-  outline:0;
-  width:100%;
-  height:430px;
-  overflow:hidden;
-  background:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow:none;
-  position:relative;
-}
-.vinfast-image-wrap img{
-  position:relative;
-  z-index:1;
-  width:100%;
-  height:100%;
-  object-fit:contain;
-  object-position:center;
-  transition:transform 1s cubic-bezier(.2,.7,.2,1);
-}
-.vinfast-visual:hover .vinfast-image-wrap img{transform:scale(1.045)}
-.vinfast-floating-card{
-  display:none !important;
-}
-.vinfast-outline{
-  position:absolute;
-  right:-5px;
-  top:0;
-  color:rgba(16,20,24,.035);
-  font:900 150px/.8 "Barlow Condensed";
-  pointer-events:none;
-}
-@media(max-width:850px){
-  .vinfast-inner{
-    grid-template-columns:1fr;
-    gap:45px;
-  }
-  .vinfast-copy{max-width:none}
-  .vinfast-visual{min-height:400px}
-  .vinfast-image-wrap{height:390px}
-}
-@media(max-width:600px){
-  .vinfast-section{padding:70px 0}
-  .vinfast-stats{grid-template-columns:1fr}
-  .vf-stat{border-right:0;border-bottom:1px solid #dfe3e6}
-  .vf-stat:last-child{border-bottom:0}
-  .vinfast-visual{min-height:330px}
-  .vinfast-image-wrap{height:285px}
-  .vinfast-actions{align-items:flex-start;flex-direction:column}
-}
-</style>
 
-</head>
+    <style id="shared-vinfast-section">
+      /* ===== VINFAST FEATURE — CLEAN WHITE EDITORIAL SECTION ===== */
+      .vinfast-section {
+        position: relative;
+        overflow: hidden;
+        background: #fff;
+        color: #101418;
+        padding: 100px 0;
+        border-top: 1px solid #e5e8ea;
+        border-bottom: 1px solid #e5e8ea;
+      }
+      .vinfast-bg {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(
+            circle at 86% 22%,
+            rgba(244, 123, 0, 0.075),
+            transparent 24%
+          ),
+          linear-gradient(115deg, rgba(16, 20, 24, 0.035) 1px, transparent 1px);
+        background-size:
+          auto,
+          80px 80px;
+        pointer-events: none;
+      }
+      .vinfast-inner {
+        width: min(1200px, 88%);
+        margin: auto;
+        position: relative;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        align-items: center;
+      }
+      .vinfast-copy {
+        max-width: 610px;
+      }
+      .vinfast-kicker {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #f47b00;
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: 0.18em;
+        margin-bottom: 18px;
+      }
+      .vinfast-kicker:before {
+        content: "";
+        width: 38px;
+        height: 2px;
+        background: #f47b00;
+      }
+      .vinfast-copy h2 {
+        margin: 0;
+        color: #101418;
+        font-family: "Barlow Condensed", Arial, sans-serif;
+        font-size: clamp(52px, 6vw, 78px);
+        line-height: 0.88;
+        text-transform: uppercase;
+        letter-spacing: -0.02em;
+      }
+      .vinfast-copy h2 span {
+        color: #f47b00;
+      }
+      .vinfast-intro {
+        margin: 27px 0 0;
+        color: #3f484f;
+        font-size: 16px;
+        line-height: 1.75;
+        max-width: 580px;
+      }
+      .vinfast-text {
+        margin: 15px 0 0;
+        color: #68727a;
+        font-size: 13px;
+        line-height: 1.8;
+        max-width: 570px;
+      }
+      .vinfast-text strong {
+        color: #101418;
+      }
+      .vinfast-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        margin-top: 32px;
+        border: 1px solid #dfe3e6;
+        background: #fff;
+      }
+      .vf-stat {
+        min-height: 96px;
+        padding: 18px;
+        background: #f7f8f9;
+        border-right: 1px solid #dfe3e6;
+      }
+      .vf-stat:last-child {
+        border-right: 0;
+      }
+      .vf-stat strong {
+        display: block;
+        font: 800 28px/1 "Barlow Condensed";
+        color: #101418;
+        text-transform: uppercase;
+      }
+      .vf-stat span {
+        display: block;
+        margin-top: 7px;
+        color: #68727a;
+        font-size: 9px;
+        line-height: 1.4;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+      .vinfast-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 16px;
+        margin-top: 29px;
+      }
+      .vinfast-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        min-height: 51px;
+        padding: 0 22px;
+        background: #f47b00;
+        color: #fff;
+        font: 800 18px/1 "Barlow Condensed";
+        text-transform: uppercase;
+        transition: 0.3s ease;
+      }
+      .vinfast-button span {
+        font-size: 20px;
+      }
+      .vinfast-button:hover {
+        background: #101418;
+        color: #fff;
+        transform: translateY(-3px);
+        box-shadow: 0 14px 30px rgba(16, 20, 24, 0.14);
+      }
+      .vinfast-secondary {
+        color: #101418;
+        font-size: 11px;
+        font-weight: 800;
+        text-transform: uppercase;
+        border-bottom: 1px solid #aeb5ba;
+        padding-bottom: 5px;
+        transition: 0.25s;
+      }
+      .vinfast-secondary:hover {
+        color: #f47b00;
+        border-color: #f47b00;
+      }
+      .vinfast-visual {
+        min-height: 485px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .vinfast-image-wrap {
+        border: 0;
+        outline: 0;
+        width: 100%;
+        height: 430px;
+        overflow: hidden;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: none;
+        position: relative;
+      }
+      .vinfast-image-wrap img {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        transition: transform 1s cubic-bezier(0.2, 0.7, 0.2, 1);
+      }
+      .vinfast-visual:hover .vinfast-image-wrap img {
+        transform: scale(1.045);
+      }
+      .vinfast-floating-card {
+        display: none !important;
+      }
+      .vinfast-outline {
+        position: absolute;
+        right: -5px;
+        top: 0;
+        color: rgba(16, 20, 24, 0.035);
+        font: 900 150px/0.8 "Barlow Condensed";
+        pointer-events: none;
+      }
+      @media (max-width: 850px) {
+        .vinfast-inner {
+          grid-template-columns: 1fr;
+          gap: 45px;
+        }
+        .vinfast-copy {
+          max-width: none;
+        }
+        .vinfast-visual {
+          min-height: 400px;
+        }
+        .vinfast-image-wrap {
+          height: 390px;
+        }
+      }
+      @media (max-width: 600px) {
+        .vinfast-section {
+          padding: 70px 0;
+        }
+        .vinfast-stats {
+          grid-template-columns: 1fr;
+        }
+        .vf-stat {
+          border-right: 0;
+          border-bottom: 1px solid #dfe3e6;
+        }
+        .vf-stat:last-child {
+          border-bottom: 0;
+        }
+        .vinfast-visual {
+          min-height: 330px;
+        }
+        .vinfast-image-wrap {
+          height: 285px;
+        }
+        .vinfast-actions {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
   <body>
     <div id="unicoPageTransition" aria-hidden="false">
       <div class="unico-loader-stage">
@@ -2600,13 +2639,13 @@
         /></a>
         <nav class="nav-links" id="navLinks">
           <a href="index.html">Home</a>
-          <a class="active" href="services.html">Services</a>
+          <a href="services.html">Services</a>
           <a href="about.html">About Us</a>
           <a href="blog.html">Blog</a>
-        <a href="vinfast.html" class="vinfast-nav">
-          <span>VINFAST</span>
-          <small class="vinfast-ev-badge">EV</small>
-        </a>
+          <a href="vinfast.html" class="vinfast-nav">
+            <span>VINFAST</span>
+            <small class="vinfast-ev-badge">EV</small>
+          </a>
           <a href="contact.html">Contact Us</a>
         </nav>
         <a class="nav-cta nav-appointment" href="#appointment"
@@ -3438,32 +3477,35 @@
         >
       </div>
     </section>
-    
 
     <!-- =======================================================
          VINFAST DEALER LOCATOR
     ======================================================= -->
-    <section class="vinfast-section" id="vinfast" aria-label="VinFast electric mobility">
+    <section
+      class="vinfast-section"
+      id="vinfast"
+      aria-label="VinFast electric mobility"
+    >
       <div class="vinfast-bg"></div>
       <div class="vinfast-inner">
-
         <div class="vinfast-copy reveal">
           <div class="vinfast-kicker">UNICO MOTORS × VINFAST</div>
 
-          <h2>Step Into the<br><span>Electric Future.</span></h2>
+          <h2>Step Into the<br /><span>Electric Future.</span></h2>
 
           <p class="vinfast-intro">
-            VinFast is building a new premium electric-mobility experience in India,
-            combining modern EV technology, distinctive SUV design and a growing
-            customer-focused sales and service ecosystem.
+            VinFast is building a new premium electric-mobility experience in
+            India, combining modern EV technology, distinctive SUV design and a
+            growing customer-focused sales and service ecosystem.
           </p>
 
           <p class="vinfast-text">
-            The India portfolio includes the <strong>VF 6</strong> and <strong>VF 7</strong>,
-            premium electric SUVs designed around connected technology, intelligent
-            driver assistance and everyday usability. VinFast has also been expanding
-            its local presence through manufacturing, dealerships and after-sales
-            infrastructure across the country.
+            The India portfolio includes the <strong>VF 6</strong> and
+            <strong>VF 7</strong>, premium electric SUVs designed around
+            connected technology, intelligent driver assistance and everyday
+            usability. VinFast has also been expanding its local presence
+            through manufacturing, dealerships and after-sales infrastructure
+            across the country.
           </p>
 
           <div class="vinfast-stats">
@@ -3482,10 +3524,20 @@
           </div>
 
           <div class="vinfast-actions">
-            <a class="vinfast-button" href="vinfast.html" target="_blank" rel="noopener noreferrer">
+            <a
+              class="vinfast-button"
+              href="vinfast.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Find Us At VinFast Dealer <span>↗</span>
             </a>
-            <a class="vinfast-secondary" href="vinfast.html" target="_blank" rel="noopener noreferrer">
+            <a
+              class="vinfast-secondary"
+              href="vinfast.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Explore VinFast India
             </a>
           </div>
@@ -3500,14 +3552,12 @@
             />
           </div>
 
-
           <div class="vinfast-outline">EV</div>
         </div>
-
       </div>
     </section>
 
-<footer class="footer">
+    <footer class="footer">
       <div class="container footer-grid">
         <div>
           <a class="footer-logo" href="index.html"
